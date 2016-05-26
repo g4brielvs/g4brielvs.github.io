@@ -1,3 +1,21 @@
+# Caches, compiled, compressed, logs and databases
+*.db
+*.pyc
+*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashesa
+ehthumbs.db
+Thumbs.db
+*.*~
+*~
+
+# Jekyll
 _site/
+.bundle/
 .sass-cache/
 .jekyll-metadata
