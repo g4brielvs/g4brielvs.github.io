@@ -51,6 +51,7 @@ social:
 # Analytics
 analytics:
   provider               : "google"
+  google:
     tracking_id          : "UA-66296217-1"
 
 # Google AdSense
