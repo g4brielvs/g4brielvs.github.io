@@ -7,11 +7,11 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Dragons of Eden"
+title                    : "Encyclopedia Galactica"
 title_separator          : "-"
 name                     : "Gabriel Stefanini Vicente"
 description              : "Applied mathematician who's passionate about learning  and changing people's lives in a meaningful way"
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "http://gabrielusvicente.com"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  : "https://github.com/gabrielusvicente/gabrielusvicente.github.io"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -28,7 +28,7 @@ comments:
     colorscheme          : # "light" (default), "dark"
 
 # SEO Related
-google_site_verification :
+google_site_verification : "OrQlEFiATYQwl3wH0ZZ_B_w1CjCUFa37xc5uGcj7ugA"
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
@@ -50,7 +50,7 @@ social:
 
 # Analytics
 analytics:
-  provider               : true # false (default), "google", "google-universal", "custom"
+  provider               : "google-universal" # false (default), "google", "google-universal", "custom"
   google:
     tracking_id          : "UA-66296217-1"
 
@@ -61,7 +61,7 @@ google_ad_slot           :
 
 # Site Author
 author:
-  name             : "Gabriel Stefanini"
+  name             : "Gabriel Vicente"
   avatar           : "bio-photo.jpg"
   bio              : "Applied mathematician who's passionate about learning  and changing people's lives in a meaningful way"
   location         : "Brazil"
@@ -97,6 +97,7 @@ defaults:
       type: posts
     values:
       layout: single
+      author_profile: true
       read_time: true
       comments: true
       share: true
@@ -158,7 +159,7 @@ kramdown:
 
 
 # Outputting
-permalink: /:categories/:title/
+permalink: pretty
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
