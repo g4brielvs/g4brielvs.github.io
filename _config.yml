@@ -12,17 +12,16 @@ title_separator          : "-"
 name                     : "Gabriel Stefanini Vicente"
 description              : "Applied mathematician who's passionate about learning  and changing people's lives in a meaningful way"
 url                      : "http://gabrielusvicente.com"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-gh_repo                  : "https://github.com/gabrielusvicente/gabrielusvicente.github.io"
-teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+baseurl                  :
+gh_repo                  : "https://github.com/g4brielvs/g4brielvs.github.io"
+teaser                   :
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : "disqus" # false (default), "disqus", "facebook", "google-plus", custom"
   disqus:
-    shortname            : "gabrielusvicente" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "g4brielvs"
   facebook:
-    # https://developers.facebook.com/docs/plugins/comments
     appid                :
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
@@ -35,7 +34,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : "gabrielsvicente"
+  username               : "g4brielvs"
 facebook:
   username               :
   app_id                 :
@@ -61,7 +60,7 @@ google_ad_slot           :
 
 # Site Author
 author:
-  name             : "Gabriel Vicente"
+  name             : "Gabriel Stefanini"
   avatar           : "bio-photo.jpg"
   bio              : "Applied mathematician who's passionate about learning  and changing people's lives in a meaningful way"
   location         : "Brazil"
@@ -71,9 +70,9 @@ author:
   codepen          :
   dribbble         :
   flickr           :
-  facebook         : "gabrielusvicente"
+  facebook         : "g4brielvs"
   foursquare       :
-  github           : "gabrielusvicente"
+  github           : "g4brielvs"
   google_plus      :
   keybase          :
   instagram        :
@@ -82,9 +81,9 @@ author:
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
-  steam            : "gabrielusvicente"
+  steam            : "g4brielvs"
   tumblr           :
-  twitter          : "gabrielsvicente"
+  twitter          : "g4brielvs"
   vine             :
   weibo            :
   xing             :
@@ -108,8 +107,6 @@ include:
   - .htaccess
   - _pages
 exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
   - .asset-cache
   - .bundle
   - .jekyll-assets-cache
