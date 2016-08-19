@@ -11,7 +11,7 @@ title                    : "Encyclopedia Galactica"
 title_separator          : "-"
 name                     : "Gabriel Stefanini Vicente"
 description              : "Applied mathematician who's passionate about learning  and changing people's lives in a meaningful way"
-url                      : "http://gabrielusvicente.com"
+url                      : "http://g4brielvs.me"
 baseurl                  :
 gh_repo                  : "https://github.com/g4brielvs/g4brielvs.github.io"
 teaser                   :
@@ -62,7 +62,7 @@ google_ad_slot           :
 author:
   name             : "Gabriel Stefanini"
   avatar           : "bio-photo.jpg"
-  bio              : "Applied mathematician who's passionate about learning  and changing people's lives in a meaningful way"
+  bio              : "Applied mathematician who's passionate about learning and changing people's lives in a meaningful way"
   location         : "Brazil"
   email            : "gabrielusvicente@gmail.com"
   uri              :

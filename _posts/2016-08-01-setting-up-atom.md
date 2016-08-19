@@ -1,10 +1,10 @@
 ---
-title: "First entry of the Encyclopedia Galactica!"
+title: "Setting up Atom"
 categories:
 tags:
-    - encyclopedia galactica
+    - tutorials
 ---
 
-Knowledge is power. What are the most intriguing questions one can ask? Unfortunately, as the super computer 'Deep Thought' (via Douglas Adams) tells us : we don't actually know what that question is.
+Setting up [Atom](https://atom.io/) is as easy as installing and forking the following gist.
 
-Here are some speculations of this humble mammal regarding Life, the Universe and Everything.
+{% gist 5c0cec445f3d027b1c54157cc7485298 %}
