@@ -1,6 +1,9 @@
 ---
-title: "First entry of the Encyclopedia Galactica!"
+title: "Setting up Atom"
 categories:
 tags:
-    - encyclopedia galactica
+    - tutorials
 ---
+
+
+{% gist 5c0cec445f3d027b1c54157cc7485298 %}
