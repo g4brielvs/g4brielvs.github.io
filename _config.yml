@@ -61,7 +61,6 @@ google_ad_slot           :
 # Site Author
 author:
   name             : "Gabriel Stefanini"
-  avatar           : "bio-photo.jpg"
   bio              : "Applied mathematician who's passionate about learning and changing people's lives in a meaningful way"
   location         : "Brazil"
   email            : "gabrielusvicente@gmail.com"
@@ -75,7 +74,7 @@ author:
   github           : "g4brielvs"
   google_plus      :
   keybase          : "g4brielvs"
-  instagram        :
+  instagram        : "g4brielvs"
   lastfm           : "g4brielvs"
   linkedin         : "gabrielvicente"
   pinterest        : "g4brielvssv"
