@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Encyclopedia Galactica"
 title_separator          : "-"
 name                     : "Gabriel Stefanini Vicente"
-description              : "Applied mathematician who's passionate about learning  and changing people's lives in a meaningful way"
+description              : "Everyday programmer, forever mathematician"
 url                      : "http://g4brielvs.me"
 baseurl                  :
 gh_repo                  : "https://github.com/g4brielvs/g4brielvs.github.io"
@@ -61,8 +61,8 @@ google_ad_slot           :
 # Site Author
 author:
   name             : "Gabriel Stefanini"
-  bio              : "Applied mathematician who's passionate about learning and changing people's lives in a meaningful way"
-  location         : "Brazil"
+  bio              : "Everyday programmer, forever mathematician"
+  location         :
   email            : "gabrielusvicente@gmail.com"
   uri              :
   bitbucket        :
@@ -167,6 +167,7 @@ gems:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
+  - jekyll-redirect-from
   - jemoji
 
 # mimic GitHub Pages with --safe
@@ -175,6 +176,7 @@ whitelist:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
+  - jekyll-redirect-from
   - jemoji
 
 
