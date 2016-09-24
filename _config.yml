@@ -69,7 +69,7 @@ author:
   codepen          :
   dribbble         :
   flickr           :
-  facebook         : "g4brielvs"
+  facebook         :
   foursquare       :
   github           : "g4brielvs"
   google_plus      :
@@ -177,6 +177,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-redirect-from
+  - jekyll-crosspost-to-medium
   - jemoji
 
 
@@ -215,3 +216,12 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+# jekyll-crosspost-to-medium
+# https://github.com/aarongustafson/jekyll-crosspost-to-medium
+jekyll-crosspost_to_medium:
+  enabled: false
+  cache: .jekyll-crosspost_to_medium
+  status: public
+  license: cc-40-by-sa
+  backdate: true
