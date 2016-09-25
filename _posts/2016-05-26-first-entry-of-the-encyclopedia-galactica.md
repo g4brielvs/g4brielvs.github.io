@@ -3,6 +3,7 @@ title: "First entry of the Encyclopedia Galactica!"
 categories:
 tags:
     - encyclopedia galactica
+crosspost_to_medium: true
 ---
 
 Knowledge is power. What are the most intriguing questions one can ask? Unfortunately, as the super computer 'Deep Thought' (via Douglas Adams) tells us : we don't actually know what that question is.

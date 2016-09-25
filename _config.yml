@@ -168,6 +168,7 @@ gems:
   - jekyll-gist
   - jekyll-feed
   - jekyll-redirect-from
+  - jekyll-crosspost-to-medium
   - jemoji
 
 # mimic GitHub Pages with --safe

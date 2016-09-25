@@ -3,6 +3,7 @@ title: "Setting up Atom"
 categories:
 tags:
     - tutorials
+crosspost_to_medium: true
 ---
 
 Setting up [Atom](https://atom.io/) is as easy as installing and forking the following gist.
