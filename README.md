@@ -1,7 +1,9 @@
-# g4brielvs.github.io
+# [g4brielvs.me](g4brielvs.github.io)
+
+[![Build Status](https://travis-ci.org/g4brielvs/g4brielvs.github.io.svg?branch=master)](https://travis-ci.org/g4brielvs/g4brielvs.github.io)
 
 ### What can I do with it?
-Since these documents are licensed under a Creative Commons license (see below for more information), please feel free to re-use and edit these terms to fit your own use. We do ask for a link back so we can help share the source of this license and spread the word further.
+Since these documents are licensed under a Creative Commons license, please feel free to re-use and edit these terms to fit your own use. Just make sure to link back so we can spread the word further.
 
 If you notice any typos or would like to suggest any changes, please contribute a pull request.
 
