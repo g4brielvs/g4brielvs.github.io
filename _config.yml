@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Encyclopedia Galactica"
+title                    : "Home"
 title_separator          : "-"
 name                     : "Gabriel Stefanini Vicente"
 description              : "Everyday programmer, forever mathematician"
