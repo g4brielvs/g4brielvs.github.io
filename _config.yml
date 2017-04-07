@@ -7,21 +7,22 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Home"
+title                    : "GSV"
 title_separator          : "-"
 name                     : "Gabriel Stefanini Vicente"
 description              : "Everyday programmer, forever mathematician"
 url                      : "http://g4brielvs.me"
-baseurl                  :
+baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  : "https://github.com/g4brielvs/g4brielvs.github.io"
-teaser                   :
-# breadcrumbs            : false # true, false (default)
+teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+breadcrumbs              : false # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : "disqus" # false (default), "disqus", "facebook", "google-plus", custom"
   disqus:
     shortname            : "g4brielvs"
   facebook:
+    # https://developers.facebook.com/docs/plugins/comments
     appid                :
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
@@ -83,6 +84,8 @@ author:
   steam            : "g4brielvs"
   tumblr           :
   twitter          : "g4brielvs"
+  medium           : "g4brielvs"
+  reddit           : "g4brielvs"
   vine             :
   weibo            :
   xing             :
