@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "GSV"
+title                    : "GS"
 title_separator          : "-"
 name                     : "Gabriel Stefanini Vicente"
 description              : "Everyday programmer, forever mathematician"
@@ -80,7 +80,7 @@ author:
   linkedin         : "gabrielvicente"
   pinterest        : "g4brielvssv"
   soundcloud       :
-  stackoverflow    : "5225560/g4brielvs"
+  stackoverflow    :
   steam            : "g4brielvs"
   tumblr           :
   twitter          : "g4brielvs"
