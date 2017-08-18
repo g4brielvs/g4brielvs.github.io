@@ -6,3 +6,192 @@ sitemap: false
 permalink: /about/
 ---
 I'm an everyday programmer and forever mathematician who's passionate about learning  and changing people's lives in a meaningful way. That's why I enjoy taking complicated subjects and facing challenging problems, and putting them in a way that's easy for everyone to understand.
+
+<!-- Styles -->
+<style>
+#chartdiv {
+  width: 100%;
+  height: 500px;
+}																		
+</style>
+
+<!-- Resources -->
+<script src="https://www.amcharts.com/lib/3/ammap.js"></script>
+<script src="https://www.amcharts.com/lib/3/maps/js/worldHigh.js"></script>
+<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+
+<!-- Chart code -->
+<script type="text/javascript">
+/**
+ * Define SVG path for target icon
+ */
+var targetSVG = "M9,0C4.029,0,0,4.029,0,9s4.029,9,9,9s9-4.029,9-9S13.971,0,9,0z M9,15.93 c-3.83,0-6.93-3.1-6.93-6.93S5.17,2.07,9,2.07s6.93,3.1,6.93,6.93S12.83,15.93,9,15.93 M12.5,9c0,1.933-1.567,3.5-3.5,3.5S5.5,10.933,5.5,9S7.067,5.5,9,5.5 S12.5,7.067,12.5,9z";
+
+/**
+ * Create the map
+ */
+var map = AmCharts.makeChart( "chartdiv", {
+  "type": "map",
+  "projection": "miller",
+  "imagesSettings": {
+    "rollOverColor": "#089282",
+    "rollOverScale": 3,
+    "selectedScale": 3,
+    "selectedColor": "#089282",
+    "color": "#13564e"
+  },
+  "areasSettings": {
+	"autoZoom" : true,
+	"color" : "#B4B4B7",
+	"colorSolid" : "#84ADE9",
+	"selectedColor" : "#84ADE9",
+	"outlineColor" : "#666666",
+	"rollOverColor" : "#9EC2F7",
+	"rollOverOutlineColor" : "#000000",  
+    "unlistedAreasColor": "#15A892",
+    "outlineThickness": 0.1
+  },
+  "dataProvider": {
+    "map": "worldHigh",
+	"getAreasFromMap" : true,
+	"areas" :
+	[
+		{
+			"id": "US",
+			"showAsSelected": true
+		},
+		{
+			"id": "BR",
+			"showAsSelected": true
+		},
+		{
+			"id": "IL",
+			"showAsSelected": true
+		},
+		{
+			"id": "JO",
+			"showAsSelected": true
+		},
+		{
+			"id": "PS",
+			"showAsSelected": true
+		},
+	],
+    "images": [ {
+	  "svgPath": targetSVG,
+	  "zoomLevel": 5,
+	  "scale": 0.5,
+	  "title": "Miami",
+	  "latitude": 25.7617,
+	  "longitude": -80.1918
+	}, {
+      "svgPath": targetSVG,
+      "zoomLevel": 5,
+      "scale": 0.5,
+      "title": "São Paulo",
+      "latitude": -23.5505,
+      "longitude": -46.6333
+    }, {
+	  "svgPath": targetSVG,
+	  "zoomLevel": 5,
+	  "scale": 0.5,
+	  "title": "Rio de Janeiro",
+	  "latitude": -22.9068,
+	  "longitude": -43.1729
+  	}, {
+	  "svgPath": targetSVG,
+	  "zoomLevel": 5,
+	  "scale": 0.5,
+	  "title": "Salvador",
+	  "latitude": -12.9722,
+	  "longitude": -38.5014
+	}, {
+	  "svgPath": targetSVG,
+	  "zoomLevel": 5,
+	  "scale": 0.5,
+	  "title": "Florianópolis",
+	  "latitude": -27.5949,
+	  "longitude": -48.5482
+	}, {
+      "svgPath": targetSVG,
+      "zoomLevel": 5,
+      "scale": 0.5,
+      "title": "Tel Aviv",
+      "latitude": 32.109333,
+      "longitude": 34.855499
+	}, {
+	  "svgPath": targetSVG,
+	  "zoomLevel": 5,
+	  "scale": 0.5,
+	  "title": "Jerusalem",
+	  "latitude": 31.7683,
+	  "longitude": 35.2137
+	}, {
+	  "svgPath": targetSVG,
+  	  "zoomLevel": 5,
+  	  "scale": 0.5,
+  	  "title": "Haifa",
+  	  "latitude": 32.794,
+  	  "longitude": 35.060
+	}, {
+  	  "svgPath": targetSVG,
+	  "zoomLevel": 5,
+	  "scale": 0.5,
+	  "title": "Mizpe Ramon",
+	  "latitude": 30.6102,
+	  "longitude": 34.8019
+  	}, {
+      "svgPath": targetSVG,
+  	  "zoomLevel": 5,
+  	  "scale": 0.5,
+  	  "title": "Hebron",
+  	  "latitude": 31.5326,
+  	  "longitude": 35.0998
+  	}, {
+	  "svgPath": targetSVG,
+	  "zoomLevel": 5,
+	  "scale": 0.5,
+	  "title": "Ramallah",
+	  "latitude": 31.9038,
+	  "longitude": 35.2034
+	}, {
+      "svgPath": targetSVG,
+	  "zoomLevel": 5,
+	  "scale": 0.5,
+	  "title": "Jericho",
+	  "latitude": 31.8611,
+	  "longitude": 35.4618
+	}, {
+	  "svgPath": targetSVG,
+	  "zoomLevel": 5,
+	  "scale": 0.5,
+	  "title": "Amman",
+	  "latitude": 31.9454,
+	  "longitude": 35.9284
+	}, {
+  	  "svgPath": targetSVG,
+  	  "zoomLevel": 5,
+  	  "scale": 0.5,
+  	  "title": "Petra",
+  	  "latitude": 30.3285,
+  	  "longitude": 35.4444
+	}, {
+	  "svgPath": targetSVG,
+	  "zoomLevel": 5,
+	  "scale": 0.5,
+	  "title": "Aqaba",
+	  "latitude": 29.5321,
+	  "longitude": 35.0063
+    }]
+  },
+  "smallMap": {},
+  "export": {
+    "enabled": true,
+	"position": "bottom-right"
+  }
+});
+</script>
+
+<!-- HTML -->
+<div id="chartdiv"></div>
