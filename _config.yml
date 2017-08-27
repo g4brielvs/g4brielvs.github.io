@@ -1,232 +1,68 @@
 # Welcome to Jekyll!
 #
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve`. If you change this file, please restart the server process.
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-# Site Settings
-locale                   : "en-US"
-title                    : "GS"
-title_separator          : "-"
-name                     : "Gabriel Stefanini Vicente"
-description              : "Everyday programmer, forever mathematician"
-url                      : "http://g4brielvs.me"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-gh_repo                  : "https://github.com/g4brielvs/g4brielvs.github.io"
-teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
-breadcrumbs              : false # true, false (default)
-words_per_minute         : 200
-comments:
-  provider               : "disqus" # false (default), "disqus", "facebook", "google-plus", custom"
-  disqus:
-    shortname            : "g4brielvs"
-  facebook:
-    # https://developers.facebook.com/docs/plugins/comments
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: "Gabriel Stefanini"
+email:
+description: "Speculations of a humble mammal regarding Life, the Universe and Everything"
+baseurl : ""
+url: "http://g4brielvs.me"
 
-# SEO Related
-google_site_verification :
-bing_site_verification   :
-alexa_site_verification  :
-yandex_site_verification :
+author: g4brielvs
 
-# Social Sharing
-twitter:
-  username               : "g4brielvs"
-facebook:
-  username               :
-  app_id                 :
-  publisher              :
-og_image                 : # Open Graph/Twitter default site image
-# For specifying social profiles
-# - https://developers.google.com/structured-data/customize/social-profiles
-social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+# Paginate
+paginate: 5
+paginate_path: ":num/"
 
-# Analytics
-analytics:
-  provider               : "google"
-  google:
-    tracking_id          : "UA-66296217-1"
-
-# Google AdSense
-google_ad_client         :
-google_ad_slot           :
-
-
-# Site Author
-author:
-  name             : "Gabriel Stefanini"
-  bio              : "Everyday programmer, forever mathematician"
-  location         :
-  email            : "gabrielusvicente@gmail.com"
-  uri              :
-  bitbucket        :
-  codepen          :
-  dribbble         :
-  flickr           :
-  facebook         :
-  foursquare       :
-  github           : "g4brielvs"
-  google_plus      :
-  keybase          : "g4brielvs"
-  instagram        : "g4brielvs"
-  lastfm           : "g4brielvs"
-  linkedin         : "gabrielvicente"
-  pinterest        : "g4brielvssv"
-  soundcloud       :
-  stackoverflow    :
-  steam            : "g4brielvs"
-  tumblr           :
-  twitter          : "g4brielvs"
-  medium           : "g4brielvs"
-  reddit           : "g4brielvs"
-  vine             :
-  weibo            :
-  xing             :
-  youtube          :
-
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-
-# Reading Files
-include:
-  - .htaccess
-  - _pages
-exclude:
-  - .asset-cache
-  - .bundle
-  - .jekyll-assets-cache
-  - .sass-cache
-  - assets/js/_main.js
-  - assets/js/plugins
-  - assets/js/vendor
-  - vendor
-  - Capfile
-  - CHANGELOG
-  - CNAME
-  - config
-  - Gemfile
-  - Gruntfile.js
-  - gulpfile.js
-  - LICENSE
-  - log
-  - node_modules
-  - package.json
-  - Rakefile
-  - README
-  - tmp
-keep_files:
-  - .git
-  - .svn
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-
-
-# Conversion
+# Build settings
 markdown: kramdown
-highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
 
-
-# Markdown Processing
-kramdown:
-  input: GFM
-  hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
-
-
-# Outputting
-permalink: pretty
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
-timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
-
-# Plugins
-gems:
+plugins:
+  - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-assets
+  - jekyll-seo-tag
   - jekyll-gist
-  - jekyll-feed
   - jekyll-redirect-from
-  - jekyll-crosspost-to-medium
-  - jemoji
 
-# mimic GitHub Pages with --safe
-whitelist:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jekyll-redirect-from
-  - jekyll-crosspost-to-medium
-  - jemoji
+include:
+    - _pages
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
 
-
-# Archives
-#  Type
-#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path (examples)
-#  - Archive page should exist at path when using Liquid method or you can
-#    expect broken links (especially with breadcrumbs enabled)
-#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path/my-awesome-category/index.html ~> path: /
-categories:
-  type: liquid
-  path: /categories/
-tags:
-  type: liquid
-  path: /tags/
-# https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
-
-
-# HTML Compression
-# - http://jch.penibelst.de/
-compress_html:
-  clippings: all
-  ignore:
-    envs: development
-
-# jekyll-crosspost-to-medium
-# https://github.com/aarongustafson/jekyll-crosspost-to-medium
-jekyll-crosspost_to_medium:
-  enabled: false
-  cache: .jekyll-crosspost_to_medium
-  status: public
-  license: cc-40-by-sa
-  backdate: true
+assets:
+  skip_baseurl_with_cdn: false
+  skip_prefix_with_cdn: false
+  prefix: "/assets"
+  digest: true
+  assets:
+    - "*.png"
+  sources:
+    - _assets/css
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/fonts
+    - _assets/img
+    - _assets/js
