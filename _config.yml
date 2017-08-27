@@ -37,6 +37,16 @@ plugins:
   - jekyll-gist
   - jekyll-redirect-from
 
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-assets
+  - jekyll-seo-tag
+  - jekyll-gist
+  - jekyll-redirect-from
+
 include:
     - _pages
 # Exclude from processing.
