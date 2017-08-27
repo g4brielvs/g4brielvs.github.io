@@ -11,9 +11,6 @@
 
     {% seo %}
 
-    {% css main %}
-
-    <!-- <link rel="shortcut icon" type="image/x-icon" href="{{ "/favicon.ico?" | prepend: site.baseurl }}"> -->
     <!-- insert favicons. use http://realfavicongenerator.net/ -->
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="/assets/favicons/favicon-32x32.png" sizes="32x32">
@@ -24,12 +21,16 @@
     <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
 </head>
 <body class="{% if page.post_class %}{{page.post_class}}{% else %}home-template{% endif %}">
-    
+
     {{ content }}
 
-    {% javascript index %}
+    <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/assets/js/index.js"></script>
 
     <!-- Google Analytics Tracking code -->
     <script type="text/javascript">

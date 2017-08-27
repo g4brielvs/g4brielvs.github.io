@@ -32,7 +32,6 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-assets
   - jekyll-seo-tag
   - jekyll-gist
   - jekyll-redirect-from
@@ -42,7 +41,6 @@ whitelist:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-assets
   - jekyll-seo-tag
   - jekyll-gist
   - jekyll-redirect-from
@@ -60,6 +58,13 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - CNAME
+  - LICENSE
+  - docker-compose.yml
+
+sass:
+    sass_dir: _sass
+    style: compressed
 
 assets:
   skip_baseurl_with_cdn: false
