@@ -1,7 +1,8 @@
 ---
+layout: post
 title: "First entry of the Encyclopedia Galactica!"
+date:   2016-04-12 00:00:00
 categories:
-tags:
     - insights
 crosspost_to_medium: true
 ---
