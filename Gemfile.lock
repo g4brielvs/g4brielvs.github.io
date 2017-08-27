@@ -33,8 +33,6 @@ GEM
       pathutil (>= 0.8)
       rack (~> 1.6)
       sprockets (~> 3.3, < 3.8)
-    jekyll-avatar (0.4.2)
-      jekyll (~> 3.0)
     jekyll-feed (0.9.2)
       jekyll (~> 3.3)
     jekyll-gist (1.4.1)
@@ -87,7 +85,6 @@ DEPENDENCIES
   font-awesome-sass (~> 4.7.0)
   jekyll (= 3.5.2)
   jekyll-assets
-  jekyll-avatar
   jekyll-feed (~> 0.6)
   jekyll-gist
   jekyll-paginate
