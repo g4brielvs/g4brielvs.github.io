@@ -1,14 +1,109 @@
 ---
-layout: archive
-author_profile: true
+layout: default
+cover: https://www.dropbox.com/s/u9yicvgxtfd5371/g4brielvs_cover.jpg?raw=1
 ---
 
-{% include base_path %}
+<header class="main-header {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
+    <nav class="main-nav overlay clearfix">
+        <a class="back-button" href="{{ site.baseurl }}about">
+            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+            About
+        </a>
+        <a class="subscribe-button" href="{{ site.baseurl }}feed.xml">
+            <i class="fa fa-rss" aria-hidden="true"></i>
+            Subscribe
+        </a>
+    </nav>
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts }}</h3>
+    {% if site.author %}
+      {% assign author = site.data.authors[site.author] %}
+    {% endif %}
 
-{% for post in paginator.posts %}
-  {% include archive-single.html %}
-{% endfor %}
+    <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">Hello!</h1>
+            <h2 class="page-description">
+                {% if site.description %}
+                    {{ site.description }}
+                {% endif %}
+            </h2>
+            <ul class="social-buttons">
+                {% if author.email %}
+                    <li><a href="mailto:{{ author.email }}"><i class="fa fa-envelope"></i></a></li>
+                {% endif %}
+                {% if author.keybase %}
+                    <li><a href="https://keybase.io/{{ author.keybase }}"><i class="fa fa-key"></i></a></li>
+                {% endif %}
+                {% if author.facebook %}
+                    <li><a href="https://facebook.com/{{ author.facebook }}"> <i class="fa fa-facebook"></i></a></li>
+                {% endif %}
+                {% if author.twitter %}
+                    <li><a href="https://twitter.com/{{ author.twitter }}"><i class=" fa fa-twitter"></i></a></li>
+                {% endif %}
+                {% if author.github %}
+                    <li><a href="https://github.com/{{ author.github }}"><i class="fa fa-github"></i></a></li>
+                {% endif %}
+                {% if author.medium %}
+                    <li><a href="https://medium.com/@{{ author.medium }}"><i class=" fa fa-medium"></i></a></li>
+                {% endif %}
+                {% if author.reddit %}
+                    <li><a href="https://reddit.com/user/{{ author.reddit }}"><i class=" fa fa-reddit"></i></a></li>
+                {% endif %}
+                {% if author.lastfm %}
+                    <li><a href="http://lastfm.com/user/{{ author.lastfm }}"><i class="fa fa-lastfm"></i></a></li>
+                {% endif %}
+                {% if author.instagram %}
+                    <li><a href="https://instagram.com/{{ author.instagram }}"><i class="fa fa-instagram"></i></a></li>
+                {% endif %}
+                {% if author.pinterest %}
+                    <li><a href="https://www.pinterest.com/{{ author.pinterest }}"><i class="fa fa-pinterest"></i></a></li>
+                {% endif %}
+                {% if author.linkedin %}
+                    <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}"><i class="fa fa-linkedin"></i></a></li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
 
-{% include paginator.html %}
+    <a class="scroll-down" href="#content">
+        <i class="fa fa-caret-down" aria-hidden="true"></i>
+        <span class="hidden">Scroll Down</span>
+    </a>
+
+</header>
+
+<main id="content" class="content" role="main">
+
+
+    <div class="extra-pagination inner">
+        {% include pagination.html %}
+    </div>
+
+    {% for post in paginator.posts %}
+
+    <article class="post">
+        <header class="post-header">
+            <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        </header>
+        <section class="post-excerpt">
+            {{ post.excerpt }} <a class="read-more" href="{{ post.url }}">read more &raquo;</a>
+        </section>
+        <footer class="post-meta">
+            {% if site.author %}
+                <img class="author-thumb" <img src="{{author.avatar}}" nopin="nopin" />
+                {{site.author}}
+            {% endif %}
+            {% if post.categories.size > 0 %}
+                {{ post.categories | array_to_sentence_string | prepend: 'on ' }}
+            {% endif %}
+            <time class="post-date" datetime="{{ post.date | date:"%Y-%m-%d" }}">
+                {{ post.date | date_to_string }}
+            </time>
+        </footer>
+    </article>
+
+    {% endfor %}
+
+    {% include pagination.html %}
+
+</main>
