@@ -127,7 +127,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 .main-nav a {
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $global-font-family;
 }
 
 /* Create a bouncing scroll-down arrow on homepage with cover image */
@@ -179,24 +179,6 @@ table { border-collapse: collapse; border-spacing: 0; }
 .archive-template .scroll-down,
 .archive-template .main-header:after {
     display: none
-}
-
-/* Appears in the top right corner of your home page */
-.blog-logo {
-    display: block;
-    float: left;
-    background: none !important;
-    border: none !important;
-}
-
-.blog-logo img {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    display: block;
-    height: 38px;
-    padding: 1px 0 5px 0;
-    width: auto;
 }
 
 .back-button {
@@ -297,16 +279,16 @@ table { border-collapse: collapse; border-spacing: 0; }
     font-size: 5rem;
     letter-spacing: -1px;
     font-weight: 700;
-    font-family: "Open Sans", sans-serif;
+    font-family: $global-font-family;
     color: #fff;
 }
 
 .page-description {
     margin: 0;
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 1.5em;
     font-weight: 400;
-    font-family: "Merriweather", serif;
+    font-family: $global-font-family;
     letter-spacing: 0.01rem;
     color: rgba(255,255,255,0.8);
 }
@@ -347,6 +329,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 .social-buttons {
     overflow: auto;
+    padding:  0;
 }
 
 .social-buttons li {
@@ -414,7 +397,7 @@ body:not(.post-template) .post-title {
 .post-meta {
     display: block;
     margin: 1.75rem 0 0 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: $global-font-family;
     font-size: 1.5rem;
     line-height: 2.2rem;
     color: #9EABB3;
@@ -428,15 +411,6 @@ body:not(.post-template) .post-title {
     border-radius: 100%;
 }
 
-.post-meta a {
-    color: #9EABB3;
-    text-decoration: none;
-}
-
-.post-meta a:hover {
-    text-decoration: underline;
-}
-
 .user-meta {
     position: relative;
     padding: 0.3rem 40px 0 100px;
@@ -446,8 +420,8 @@ body:not(.post-template) .post-title {
 .post-date {
     display: inline-block;
     margin-left: 8px;
-    padding-left: 12px;
-    border-left: #d5dbde 1px solid;
+padding-left: 12px;
+border-left: #d5dbde 1px solid;
     text-transform: uppercase;
     font-size: 1.3rem;
     white-space: nowrap;
@@ -814,7 +788,7 @@ body:not(.post-template) .post-title {
 /* Location, website, and link */
 .author-profile .author-meta {
     margin: 2rem 0;
-    font-family: "Merriweather", serif;
+    font-family: $global-font-family;
     letter-spacing: 0.01rem;
     font-size: 1.7rem;
 }
@@ -858,7 +832,7 @@ body:not(.post-template) .post-title {
     width: 80%;
     max-width: 710px;
     margin: 4rem auto;
-    font-family: "Open Sans", sans-serif;
+    font-family: $global-font-family;
     font-size: 1.3rem;
     color: #9EABB3;
     text-align: center;
@@ -945,7 +919,7 @@ body:not(.post-template) .post-title {
     margin: 8rem 0 0 0;
     padding: 0.5rem 15px;
     border-top: #EBF2F6 1px solid;
-    font-family: "Open Sans", sans-serif;
+    font-family: $global-font-family;
     font-size: 1rem;
     line-height: 1.75em;
     color: #BBC7CC;
@@ -1005,10 +979,6 @@ body:not(.post-template) .post-title {
     .archive-template .main-header {
         min-height: 180px;
         padding: 10% 0;
-    }
-
-    .blog-logo img {
-        padding: 4px 0;
     }
 
     .page-title {
@@ -1126,14 +1096,6 @@ body:not(.post-template) .post-title {
         border-bottom: #e0e4e7 1px solid;
     }
 
-    .blog-logo {
-        padding: 10px 10px;
-    }
-
-    .blog-logo img {
-        height: 26px;
-    }
-
     .back-button,
     .subscribe-button {
         height: 44px;
@@ -1174,10 +1136,6 @@ body:not(.post-template) .post-title {
     .main-nav.overlay .back-button,
     .main-nav.overlay .subscribe-button {
         border-color: transparent;
-    }
-
-    .blog-logo img {
-        max-height: 80px;
     }
 
     .inner,
@@ -1360,67 +1318,6 @@ body:not(.post-template) .post-title {
     }
 
 }
-
-
-/* ==========================================================================
-   12. Animations
-   ========================================================================== */
-
-/* Used to fade in title/desc on the home page */
-@-webkit-keyframes fade-in-down {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(-10px);
-        transform: translateY(-10px);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-}
-@keyframes fade-in-down {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(-10px);
-        transform: translateY(-10px);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-}
-/* Used to bounce .scroll-down on home page */
-@-webkit-keyframes bounce {
-    0%, 10%, 25%, 40%, 50% {
-        -webkit-transform: translateY(0);
-                transform: translateY(0);
-    }
-    20% {
-        -webkit-transform: translateY(-10px);
-                transform: translateY(-10px);
-    }
-    30% {
-        -webkit-transform: translateY(-5px);
-                transform: translateY(-5px);
-    }
-}
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        -webkit-transform: translateY(0);
-                transform: translateY(0);
-    }
-    40% {
-        -webkit-transform: translateY(-10px);
-                transform: translateY(-10px);
-    }
-    60% {
-        -webkit-transform: translateY(-5px);
-                transform: translateY(-5px);
-    }
-}
-
 
 /* ==========================================================================
    End of file. Animations should be the last thing here. Do not add stuff
