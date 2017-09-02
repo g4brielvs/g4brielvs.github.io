@@ -1,0 +1,10 @@
+
+<span class="post-head" title="Estimated read time">
+    <i class="fa fa-clock-o" aria-hidden="true"></i>
+    {% assign words = content | number_of_words %}
+    {% if words < 360 %}
+        less than 1 minute read
+    {% else %}
+        {{ words | divided_by:180 }} minutes read
+    {% endif %}
+</span>
