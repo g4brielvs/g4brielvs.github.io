@@ -40,22 +40,46 @@ exclude:
   - LICENSE
   - docker-compose.yml
 
-sass:
-    sass_dir: _sass
-    style: compressed
+  # Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-gist
+  - jekyll-redirect-from
 
-assets:
-  skip_baseurl_with_cdn: false
-  skip_prefix_with_cdn: false
-  prefix: "/assets"
-  digest: true
-  assets:
-    - "*.png"
-  sources:
-    - _assets/css
-    - _assets/images
-    - _assets/javascripts
-    - _assets/stylesheets
-    - _assets/fonts
-    - _assets/img
-    - _assets/js
+# Outputting
+permalink: /:year/:month/:day/:title/
+paginate: 5
+paginate_path: /:num/
+timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+defaults:
+  # _posts
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# HTML Compression
+# - http://jch.penibelst.de/
+compress_html:
+  clippings: all
