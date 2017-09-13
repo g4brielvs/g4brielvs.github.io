@@ -9,7 +9,7 @@ post_class: post-template
             <i class="fa fa-chevron-left" aria-hidden="true"></i>
             Back
         </a>
-        <a class="subscribe-button" href="{{ site.baseurl }}feed.xml">
+        <a class="subscribe-button" href="{{ site.url }}feed.xml">
             <i class="fa fa-rss" aria-hidden="true"></i>
             Subscribe
         </a>
@@ -45,18 +45,17 @@ post_class: post-template
             </ul>
         </section>
         {% endif %}
-
-        {% if site.author %}
-          {% assign author = site.data.authors[site.author] %}
-        {% endif %}
-
         <footer class="post-footer">
             <!-- If we want to display author's name and bio -->
+            {% if site.author %}
+              {% assign author = site.data.authors[site.author] %}
+            {% endif %}
             {% if site.author %}
                 <figure class="author-image">
                     <a class="img" href="{{ site.baseurl }}" style="background-image: url({{author.avatar}})"></a>
                 </figure>
             {% endif %}
+            {% include comments.html %}
         </footer>
     </article>
 </main>

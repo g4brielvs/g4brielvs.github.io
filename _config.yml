@@ -14,40 +14,17 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: "Gabriel Stefanini"
-email:
+author: g4brielvs
 description: "Speculations of a humble mammal regarding Life, the Universe and Everything"
 baseurl : ""
 url: "http://g4brielvs.me"
 
-author: g4brielvs
 google_analytics: "UA-66296217-1"
+disqus_shortname: "g4brielvs"
 
-# Paginate
-paginate: 5
-paginate_path: ":num/"
-
-# Build settings
-markdown: kramdown
-
-plugins:
-  - jekyll-feed
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-gist
-  - jekyll-redirect-from
-
-# mimic GitHub Pages with --safe
-whitelist:
-  - jekyll-feed
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-gist
-  - jekyll-redirect-from
-
+# Handling Reading
 include:
-    - _pages
+  - _pages
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
