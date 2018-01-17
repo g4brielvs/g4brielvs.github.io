@@ -9,6 +9,7 @@
 
 <!-- Resources -->
 <script src="https://www.amcharts.com/lib/3/ammap.js"></script>
+<script src="https://www.amcharts.com/lib/3/maps/js/worldLow.js"></script>
 <script src="https://www.amcharts.com/lib/3/maps/js/worldHigh.js"></script>
 <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
 <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
@@ -25,24 +26,24 @@ var targetSVG = "M9,0C4.029,0,0,4.029,0,9s4.029,9,9,9s9-4.029,9-9S13.971,0,9,0z 
  */
 var map = AmCharts.makeChart( "chartdiv", {
   "type": "map",
-  "projection": "miller",
+  "projection": "eckert5",
   "imagesSettings": {
     "rollOverColor": "#089282",
-    "rollOverScale": 3,
+    "rollOverScale": 2,
     "selectedScale": 3,
     "selectedColor": "#089282",
-    "color": "#13564e"
+    "color": "#8899DD"
   },
   "areasSettings": {
 	"autoZoom" : false,
 	"color" : "#B4B4B7",
-	"colorSolid" : "#84ADE9",
-	"selectedColor" : "#84ADE9",
+	"colorSolid" : "#88DDEE",
+	"selectedColor" : "#993366",
 	"outlineColor" : "#666666",
-	"rollOverColor" : "#9EC2F7",
-	"rollOverOutlineColor" : "#000000",
+	"rollOverColor" : "#888888",
+	"rollOverOutlineColor" : "#888888",
     "unlistedAreasColor": "#15A892",
-    "outlineThickness": 0.1
+    "outlineThickness": 0.15
   },
   "dataProvider": {
     "map": "worldHigh",
@@ -69,22 +70,34 @@ var map = AmCharts.makeChart( "chartdiv", {
 			"id": "PS",
 			"showAsSelected": true
 		},
+        {
+            "id": "CZ",
+            "showAsSelected": true
+        }
 	],
     "images": [ {
 	  "svgPath": targetSVG,
 	  "zoomLevel": 5,
-	  "scale": 0.5,
+	  "scale": 0.75,
 	  "title": "Miami",
 	  "latitude": 25.7617,
 	  "longitude": -80.1918
 	}, {
       "svgPath": targetSVG,
       "zoomLevel": 5,
-      "scale": 0.5,
+      "scale": 0.75,
       "title": "São Paulo",
       "latitude": -23.5505,
       "longitude": -46.6333
     }, {
+      "svgPath": targetSVG,
+      "zoomLevel": 5,
+      "scale": 0.75,
+      "title": "Prague",
+      "latitude": 50.0755,
+      "longitude": 14.4378
+    }]
+    /*, {
 	  "svgPath": targetSVG,
 	  "zoomLevel": 5,
 	  "scale": 0.5,
@@ -175,9 +188,8 @@ var map = AmCharts.makeChart( "chartdiv", {
 	  "title": "Aqaba",
 	  "latitude": 29.5321,
 	  "longitude": 35.0063
-    }]
+  }]*/
   },
-  "smallMap": {}
 });
 </script>
 
