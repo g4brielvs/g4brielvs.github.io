@@ -46,7 +46,7 @@ var map = AmCharts.makeChart( "chartdiv", {
     "outlineThickness": 0.15
   },
   "dataProvider": {
-    "map": "worldHigh",
+    "map": "worldLow",
 	"getAreasFromMap" : true,
 	"areas" :
 	[
@@ -73,12 +73,16 @@ var map = AmCharts.makeChart( "chartdiv", {
         {
             "id": "CZ",
             "showAsSelected": true
+        },
+        {
+            "id": "NL",
+            "showAsSelected": true
         }
 	],
     "images": [ {
 	  "svgPath": targetSVG,
 	  "zoomLevel": 5,
-	  "scale": 0.75,
+	  "scale": 1.0,
 	  "title": "Miami",
 	  "latitude": 25.7617,
 	  "longitude": -80.1918
