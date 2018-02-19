@@ -51,7 +51,7 @@ plugins:
 
 # Outputting
 permalink: /:year/:month/:day/:title/
-paginate: 5
+paginate: 3
 paginate_path: /:num/
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 

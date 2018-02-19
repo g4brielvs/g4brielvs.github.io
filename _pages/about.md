@@ -1,10 +1,17 @@
 ---
 title: "About"
-layout: page
+layout: default
 sitemap: false
 permalink: /about/
 ---
 
-I'm an everyday programmer and forever mathematician who's passionate about learning and changing people's lives in a meaningful way. That's why I enjoy taking complicated subjects and facing challenging problems, and putting them in a way that's easy for everyone to understand.
+<nav class="main-nav">
+    <a class="back-button" href="{{ site.url }}">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </a>
+    <a class="subscribe-button" href="{{ site.url }}/feed.xml">
+        <i class="fa fa-rss" aria-hidden="true"></i>
+    </a>
+</nav>
 
 {% include map.html %}
