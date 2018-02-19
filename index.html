@@ -5,13 +5,11 @@ cover: https://www.dropbox.com/s/u9yicvgxtfd5371/g4brielvs_cover.jpg?raw=1
 
 <header class="main-header {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
     <nav class="main-nav overlay">
-        <a class="back-button" href="{{ site.baseurl }}about">
+        <a class="back-button" href="{{ site.url }}/about">
             <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-            About
         </a>
-        <a class="subscribe-button" href="{{ site.baseurl }}feed.xml">
+        <a class="subscribe-button" href="{{ site.url }}/feed.xml">
             <i class="fa fa-rss" aria-hidden="true"></i>
-            Subscribe
         </a>
     </nav>
 
@@ -43,6 +41,9 @@ cover: https://www.dropbox.com/s/u9yicvgxtfd5371/g4brielvs_cover.jpg?raw=1
                 {% if author.github %}
                     <li><a href="https://github.com/{{ author.github }}"><i class="fa fa-github"></i></a></li>
                 {% endif %}
+                {% if author.linkedin %}
+                    <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}"><i class="fa fa-linkedin"></i></a></li>
+                {% endif %}
                 {% if author.medium %}
                     <li><a href="https://medium.com/@{{ author.medium }}"><i class=" fa fa-medium"></i></a></li>
                 {% endif %}
@@ -57,9 +58,6 @@ cover: https://www.dropbox.com/s/u9yicvgxtfd5371/g4brielvs_cover.jpg?raw=1
                 {% endif %}
                 {% if author.pinterest %}
                     <li><a href="https://www.pinterest.com/{{ author.pinterest }}"><i class="fa fa-pinterest"></i></a></li>
-                {% endif %}
-                {% if author.linkedin %}
-                    <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}"><i class="fa fa-linkedin"></i></a></li>
                 {% endif %}
             </ul>
         </div>
