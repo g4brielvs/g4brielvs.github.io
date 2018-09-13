@@ -6,7 +6,7 @@ cover: https://www.dropbox.com/s/u9yicvgxtfd5371/g4brielvs_cover.jpg?raw=1
 <header class="main-header {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
     <nav class="main-nav overlay">
         <a class="back-button" href="{{ site.url }}/about">
-            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+            <i class="fa fa-globe" aria-hidden="true"></i>
         </a>
         <a class="subscribe-button" href="{{ site.url }}/feed.xml">
             <i class="fa fa-rss" aria-hidden="true"></i>
@@ -19,18 +19,28 @@ cover: https://www.dropbox.com/s/u9yicvgxtfd5371/g4brielvs_cover.jpg?raw=1
 
     <div class="vertical">
         <div class="main-header-content inner">
-            <h1 class="page-title">Hello!</h1>
+            <h1 class="page-title">
+                {{ site.author }}
+            </h1>
             <h2 class="page-description">
                 {% if site.description %}
-                    {{ site.description }}
+                    <i class="fa fa-quote-left"></i>
+                    {{ author.headline }}
+                    <i class="fa fa-quote-right"></i>
                 {% endif %}
             </h2>
             <ul class="social-buttons">
-                {% if author.email %}
-                    <li><a href="mailto:{{ author.email }}"><i class="fa fa-envelope"></i></a></li>
-                {% endif %}
                 {% if author.keybase %}
-                    <li><a href="https://keybase.io/{{ author.keybase }}"><i class="fa fa-key"></i></a></li>
+                    <li><a href="https://keybase.io/{{ author.keybase }}"><i class="fa fa-user-circle-o"></i></a></li>
+                {% endif %}
+                {% if author.email %}
+                <li><a href="mailto:{{ author.email }}"><i class="fa fa-paper-plane"></i></a></li>
+                {% endif %}
+                {% if author.cv %}
+                <li><a href="{{ site.url }}/cv/"><i class="fa fa-file-text-o"></i></a></li>
+                {% endif %}
+                {% if author.linkedin %}
+                <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}"><i class="fa fa-linkedin"></i></a></li>
                 {% endif %}
                 {% if author.facebook %}
                     <li><a href="https://facebook.com/{{ author.facebook }}"> <i class="fa fa-facebook"></i></a></li>
@@ -41,14 +51,11 @@ cover: https://www.dropbox.com/s/u9yicvgxtfd5371/g4brielvs_cover.jpg?raw=1
                 {% if author.github %}
                     <li><a href="https://github.com/{{ author.github }}"><i class="fa fa-github"></i></a></li>
                 {% endif %}
-                {% if author.linkedin %}
-                    <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}"><i class="fa fa-linkedin"></i></a></li>
-                {% endif %}
                 {% if author.medium %}
                     <li><a href="https://medium.com/@{{ author.medium }}"><i class=" fa fa-medium"></i></a></li>
                 {% endif %}
                 {% if author.reddit %}
-                    <li><a href="https://reddit.com/user/{{ author.reddit }}"><i class=" fa fa-reddit"></i></a></li>
+                    <li><a href="https://reddit.com/user/{{ author.reddit }}"><i class=" fa fa-reddit-alien"></i></a></li>
                 {% endif %}
                 {% if author.lastfm %}
                     <li><a href="http://lastfm.com/user/{{ author.lastfm }}"><i class="fa fa-lastfm"></i></a></li>
@@ -59,6 +66,10 @@ cover: https://www.dropbox.com/s/u9yicvgxtfd5371/g4brielvs_cover.jpg?raw=1
                 {% if author.pinterest %}
                     <li><a href="https://www.pinterest.com/{{ author.pinterest }}"><i class="fa fa-pinterest"></i></a></li>
                 {% endif %}
+                {% if author.blockchain %}
+                    <li><a href=" https://www.blockchain.com/btc/address/{{ author.blockchain }}"><i class="fa fa-bitcoin"></i></a></li>
+                {% endif %}
+               
             </ul>
         </div>
     </div>

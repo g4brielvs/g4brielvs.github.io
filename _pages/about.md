@@ -14,4 +14,10 @@ permalink: /about/
     </a>
 </nav>
 
+{% if site.author %}
+    {% assign author = site.data.authors[site.author] %}
+        {{ author.bio }}
+        "I haven’t been everywhere, but it’s on my list." – Susan Sontag
+{% endif %}
+
 {% include map.html %}
