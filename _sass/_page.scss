@@ -344,6 +344,14 @@ table { border-collapse: collapse; border-spacing: 0; }
     transition: all .2s ease-in-out;
 }
 
+.social-buttons svg {
+    color: #fff;    
+    border-radius: 25;
+    font-size: 24px;
+    text-align: center;
+    transition: all .2s ease-in-out;
+}
+
 /* Every post, on every page, gets this style on its <article> tag */
 .post {
     position: relative;
