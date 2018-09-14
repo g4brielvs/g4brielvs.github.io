@@ -15,7 +15,7 @@ crosspost_to_medium: true
 
 In 1950, Russell was awarded the Nobel Prize in Literature "in recognition of his varied and significant writings in which he champions humanitarian ideals and freedom of thought".
 
-In this series, we will on set foot on the space of mathematical reasoning and 
-and how its theories shapes and unravels the intricacy our modern world.
+In this series, we will set foot on the universe of mathematical reasoning
+and how its theories shape and unravel the intricacy our modern world.
 
 **Stay tuned!**
