@@ -2,9 +2,9 @@
 <span class="post-head" title="Estimated read time">
     <i class="fas fa-clock" aria-hidden="true"></i>
     {% assign words = content | number_of_words %}
-    {% if words < 360 %}
+    {% if words < 200 %}
         less than 1 minute read
     {% else %}
-        {{ words | divided_by:180 }} minutes read
+        {{ words | divided_by:50 }} minutes read
     {% endif %}
 </span>

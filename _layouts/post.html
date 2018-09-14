@@ -6,7 +6,7 @@ post_class: post-template
 <header class="main-header post-head {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
     <nav class="main-nav {% if page.cover %} overlay {% endif %}">
         <a class="back-button" href="{{ site.url }}">
-            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            <i class="fa fa-th" aria-hidden="true"></i>
         </a>
         <a class="subscribe-button" href="{{ site.url }}/feed.xml">
             <i class="fa fa-rss" aria-hidden="true"></i>
@@ -42,9 +42,9 @@ post_class: post-template
                 </figure>
                 <section class="author">
                     <p> {{ author.bio }}</p>
-                    <b>"I haven’t been everywhere, but it’s on my list."<br>Susan Sontag</b>
-                    <br>
-                    <a class="fab fa-creative-commons fa-lg" href="https://creativecommons.org/licenses/by/4.0/"></a>
+                    <a href="https://creativecommons.org/licenses/by/4.0/">
+                        <i class="fab fa-creative-commons" aria-hidden="true"></i>
+                    </a>
                 </section>
             {% endif %}
             {% include comments.html %}
