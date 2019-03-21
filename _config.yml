@@ -13,9 +13,9 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Gabriel Stefanini"
+title: "Gabriel"
 author: g4brielvs
-description: "A humble mammal's speculations about Life, the Universe and Everything"
+description: "g4brielvs"
 baseurl : ""
 url: "http://g4brielvs.me"
 
@@ -48,6 +48,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-gist
   - jekyll-redirect-from
+  - jekyll-crosspost-to-medium
 
 # Outputting
 permalink: /:year/:month/:day/:title/
@@ -56,6 +57,9 @@ paginate_path: /:num/
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Markdown Processing
+markdown: kramdown
+highlighter: rouge
+
 kramdown:
   input: GFM
   hard_wrap: false
@@ -74,6 +78,7 @@ defaults:
       type: posts
     values:
       layout: post
+      comments: true
 
 sass:
   sass_dir: _sass
@@ -83,3 +88,13 @@ sass:
 # - http://jch.penibelst.de/
 compress_html:
   clippings: all
+
+#Jekyll crosspost to Medium
+# - https://github.com/aarongustafson/jekyll-crosspost-to-medium
+jekyll-crosspost_to_medium:
+  enabled: false
+  cache: .jekyll-crosspost_to_medium
+  status: public
+  license: cc-40-by-sa
+  #text: '<p><i>Your (optional) signoff for the post.</i></p>'
+  #backdate: true
