@@ -40,7 +40,7 @@ exclude:
   - LICENSE
   - docker-compose.yml
 
-  # Plugins
+# Plugins
 plugins:
   - jekyll-feed
   - jekyll-paginate
@@ -88,3 +88,13 @@ sass:
 # - http://jch.penibelst.de/
 compress_html:
   clippings: all
+
+#Jekyll crosspost to Medium
+# - https://github.com/aarongustafson/jekyll-crosspost-to-medium
+jekyll-crosspost_to_medium:
+  enabled: false
+  cache: .jekyll-crosspost_to_medium
+  status: public
+  license: cc-40-by-sa
+  #text: '<p><i>Your (optional) signoff for the post.</i></p>'
+  #backdate: true

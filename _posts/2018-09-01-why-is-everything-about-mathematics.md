@@ -4,7 +4,7 @@ title: "Why is Everything all about Mathematics?"
 categories:
     - mathematics
     - philosophy
-crosspost_to_medium: true
+crosspost_to_medium: false
 ---
 
 <blockquote>

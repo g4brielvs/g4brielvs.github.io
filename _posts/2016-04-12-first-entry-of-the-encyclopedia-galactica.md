@@ -4,7 +4,7 @@ title: "First entry of the Encyclopedia Galactica!"
 categories:
     - mathematics
     - philosophy
-crosspost_to_medium: true
+crosspost_to_medium: false
 ---
 
 <blockquote>
