@@ -1,5 +1,5 @@
 ---
-title: "Gabriel Stefanini's Box"
+title: "Box"
 sitemap: false
 permalink: /box/
 redirect_to:

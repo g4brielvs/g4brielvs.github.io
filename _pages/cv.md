@@ -1,5 +1,5 @@
 ---
-title: "Gabriel Stefanini's CV"
+title: "CV"
 sitemap: true
 permalink: /cv/
 redirect_to:
