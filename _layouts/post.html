@@ -14,16 +14,30 @@ post_class: post-template
     </nav>
 </header>
 
+{% if site.author %}
+{% assign author = site.data.authors[site.author] %}
+{% endif %}
+
 <main class="content" role="main">
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title">{{ page.title }}</h1>
+            <h1 class="post-title">{{ page.title }}</h1>  
             <section class="post-meta">
-                {% include read_time.html %}
-                <time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>
-                {% if page.categories.size > 0 %}
-                    {{ page.categories | array_to_sentence_string | prepend: 'on ' }}
-                {% endif %}
+                {% if site.author %}
+                    <img class="author-thumb" <img src="{{author.avatar}}" nopin="nopin" />
+                    {{author.name | prepend: 'by '}}
+                {% endif %}    
+                <time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">
+                    {{ page.date | date_to_string }}
+                </time>
+                <section class="post-date">
+                    {% if page.categories.size > 0 %} 
+                        {{ page.categories | array_to_sentence_string | prepend: '' }}
+                    {% endif %} 
+                </section>
+                <section class="post-date">
+                    {% include read_time.html %}
+                </section>
             </section>
         </header>
 
@@ -34,14 +48,12 @@ post_class: post-template
         <footer class="post-footer">
             <!-- If we want to display author's name and bio -->
             {% if site.author %}
-              {% assign author = site.data.authors[site.author] %}
-            {% endif %}
-            {% if site.author %}
                 <figure class="author-image">
-                    <a class="img" href="{{ site.url }}/about/" style="background-image: url({{author.avatar}})"></a>
+                    <a class="img" href="{{ site.url }}" style="background-image: url({{author.avatar}})"></a>
                 </figure>
                 <section class="author">
-                    <p> {{ author.bio }}</p>
+                    <h4>{{author.github}}</h4>
+                    <p>{{ author.bio }}</p>
                     <a href="https://creativecommons.org/licenses/by/4.0/">
                         <i class="fab fa-creative-commons" aria-hidden="true"></i>
                     </a>
