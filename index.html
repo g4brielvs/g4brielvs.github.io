@@ -42,9 +42,6 @@ cover: https://www.dropbox.com/s/u9yicvgxtfd5371/g4brielvs_cover.jpg?raw=1
                 {% if author.keybase %}
                     <li><a href="https://www.t.me/{{ author.telegram }}"><i class="fab fa-telegram"></i></a></li>
                 {% endif %}
-                {% if author.linkedin %}
-                    <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}"><i class="fab fa-linkedin-in"></i></a></li>
-                {% endif %}
                 {% if author.cv %}
                     <li><a href="{{ site.url }}/cv/"><i class="far fa-file-pdf"></i></a></li>
                 {% endif %}
@@ -54,20 +51,23 @@ cover: https://www.dropbox.com/s/u9yicvgxtfd5371/g4brielvs_cover.jpg?raw=1
                 {% if author.twitter %}
                     <li><a href="https://twitter.com/{{ author.twitter }}"><i class=" fab fa-twitter"></i></a></li>
                 {% endif %}
+                {% if author.medium %}
+                    <li><a href="https://medium.com/@{{ author.medium }}"><i class=" fab fa-medium"></i></a></li>
+                {% endif %}
                 {% if author.reddit %}
                     <li><a href="https://reddit.com/user/{{ author.reddit }}"><i class=" fab fa-reddit-alien"></i></a></li>
                 {% endif %}
                 {% if author.github %}
                     <li><a href="https://github.com/{{ author.github }}"><i class="fab fa-github"></i></a></li>
                 {% endif %}
-                {% if author.medium %}
-                    <li><a href="https://medium.com/@{{ author.medium }}"><i class=" fab fa-medium"></i></a></li>
-                {% endif %}
-                {% if author.lastfm %}
-                    <li><a href="http://lastfm.com/user/{{ author.lastfm }}"><i class="fab fa-lastfm"></i></a></li>
+                {% if author.linkedin %}
+                    <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}"><i class="fab fa-linkedin-in"></i></a></li>
                 {% endif %}
                 {% if author.goodreads %}
                     <li><a href="https://goodreads.com/{{ author.goodreads }}"><i class="fab fa-goodreads"></i></a></li>
+                {% endif %}
+                {% if author.lastfm %}
+                    <li><a href="http://lastfm.com/user/{{ author.lastfm }}"><i class="fab fa-lastfm"></i></a></li>
                 {% endif %}
                 {% if author.instagram %}
                     <li><a href="https://instagram.com/{{ author.instagram }}"><i class="fab fa-instagram"></i></a></li>
@@ -81,48 +81,35 @@ cover: https://www.dropbox.com/s/u9yicvgxtfd5371/g4brielvs_cover.jpg?raw=1
             </ul>
         </div>
     </div>
-
     <a class="scroll-down" href="#content">
         <i class="fa fa-caret-down fa-lg" aria-hidden="true"></i>
         <span class="hidden">Scroll Down</span>
     </a>
-
 </header>
 
 <main id="content" class="content" role="main">
-
-
     <div class="extra-pagination inner">
         {% include pagination.html %}
     </div>
-
     {% for post in paginator.posts %}
-
-    <article class="post">
-        <header class="post-header">
-            <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <a class="post-meta" {% include read_time.html %}</a>
-            {{ post.excerpt }}
-            <a class="read-more" href="{{ post.url }}">read more &raquo;</a>
-        </section>
-        <footer class="post-meta">
-            {% if site.author %}
-                <img class="author-thumb" <img src="{{author.avatar}}" nopin="nopin" />
-                {{author.name}}
-            {% endif %}
-            {% if post.categories.size > 0 %}
-                {{ post.categories | array_to_sentence_string | prepend: 'on ' }}
-            {% endif %}
-            <time class="post-date" datetime="{{ post.date | date:"%Y-%m-%d" }}">
-                {{ post.date | date_to_string }}
-            </time>
-        </footer>
-    </article>
-
+        <article class="post">
+            <header class="post-header">
+                <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            </header>
+            <section class="post-excerpt">
+                {{ post.excerpt }}
+                <a class="read-more" href="{{ post.url }}">read more &raquo;</a>
+            </section>
+            <footer class="post-meta">
+                {% if site.author %}
+                    <img class="author-thumb" <img src="{{author.avatar}}" nopin="nopin" />
+                    {{author.name | prepend: 'by '}}
+                {% endif %}
+                <time class="post-date" datetime="{{ post.date | date:"%Y-%m-%d" }}">
+                    {{ post.date | date_to_string }}
+                </time>
+            </footer>
+        </article>
     {% endfor %}
-
     {% include pagination.html %}
-
 </main>
