@@ -58,12 +58,12 @@ the rate of infection is proportional to the infectious population
 
 Well, stating a relation of proportionality does not give us much. We still are not able to answer any questions. Is this virus dangerous? How contagious is it? Is it deadly? Are we all going to die?
 
-We are going to formulate a model using variables and parameters to quantify *how proportial* that relation is.
+We are going to formulate a model using variables and parameters to quantify *how proportial* that relation is. Using our intuition, there are two parameters we will take into account. 
 
 - *$\beta$*: *contact rate* or how many people an infected person comes into contact with in given time
 - *$\gamma$*: *recovery rate* or how many people recover in given time
 
-Using our intuition for the model's formulation, those are the two parameters we will take into account. The rate on which people are infected should grow the more contact they have to each other and should decay as they recover. In another words, the rate of change is *positively* proportional to $\beta$ (*contact rate*) and *negatively* proportional to $\gamma$ (*recovery rate*)
+The rate on which people are infected should grow the more contact they have to each other and should decay as they recover. In another words, the rate of change is *positively* proportional to $\beta$ (*contact rate*) and *negatively* proportional to $\gamma$ (*recovery rate*)
 
 Finally, we have our equation,
 
@@ -75,9 +75,13 @@ $$
 
 Now let us take some time to check if we can take some conclusions from it. 
 
-If the *recovery rate* is greater than *contact rate*, the rate of change will always be negative, so the infection will eventually dissipate and even not outbreak. On the other hand, if *contact rate* is greater *recovery rate*, we will have a disaster. Apparently, those paramaters indicate how strong an epidemic can be.
+If the *recovery rate* is greater than *contact rate*, the rate of change will always be negative, so the infection will eventually dissipate and even not outbreak. 
 
-Now, if $\gamma$ is the *recovery rate*, then $1/\gamma$ is the *infectious/recovery period* or the period of time during which an infected individual can pass it on, consider the product between the $\beta$ (*contact rate*) and $1/\gamma$ (*infectious period/recovery*) and we will have the average number of people an infected patient will pass it on.
+On the other hand, if *contact rate* is greater *recovery rate*, we will have a disaster. Apparently, those paramaters indicate how strong an epidemic can be.
+
+Now, if $\gamma$ is the *recovery rate*, then $1/\gamma$ is the *infectious/recovery period* or the period of time during which an infected individual can pass it on, 
+
+Now, consider the product between the $\beta$ and $1/\gamma%. That results on the average number of people an infected patient will pass the infection on. For example, let us say in given scenario the *contact rate* $\beta = 0.2$ and the *infectious/recovery* period is $\gamma = 10$ days. Then we expect that each infected patient will pass the infection onto 2 people.
 
 $$
 \begin{equation}
