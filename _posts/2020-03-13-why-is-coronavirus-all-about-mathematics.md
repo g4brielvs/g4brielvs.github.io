@@ -177,7 +177,7 @@ Let us see the rest of the solution,
 
 Once more, we visually check how sensitive those systems are to the *basic reproduction number*.
 
-Just imagine that rather than passing the infection on to 4 people, we slow it down to onto 3, that is a 25% reduction of active cases at the peak. If 4 to 2, that number would be cut to half.
+Just imagine that rather than passing the infection on to 4 people, we slow it down to to 3, that is a 25% reduction of active cases at the peak. If 4 to 2, that number would be cut to half!
 
 By mitigating the infection, we will be able to not only to postpone the peak of the outbreak, but to bring the maximum number of active cases the at the peak to a lower ground and then to protect the most vulnerable by making them less susceptible and giving people the chance to get proper treatment.
 
@@ -186,6 +186,23 @@ By mitigating the infection, we will be able to not only to postpone the peak of
 
 Another important point to make it is our resources, like healthcare and food supply chain, are limited and not postponing the peak of infection could stress them to a point where they could not operate, leading to catastrophe.
 
+### Herd immunity
+
+<blockquote>
+Herd immunity (also called herd effect, community immunity, population immunity, or social immunity) is a form of indirect protection from infectious disease that occurs when a large percentage of a population has become immune to an infection, thereby providing a measure of protection for individuals who are not immune
+</blockquote>
+
+I will let the numbers talk. Assuming that 50% of the polulation is immune/vaccinated initially,
+
+{% include posts/2020-03-13-why-is-coronavirus-all-about-mathematics/8.html %}
+
+{% include posts/2020-03-13-why-is-coronavirus-all-about-mathematics/9.html %}
+
+and even in the event of the apocalypse,
+
+{% include posts/2020-03-13-why-is-coronavirus-all-about-mathematics/10.html %}
+
+<br>
 That's why Coronavirus all about Mathematics. As Euler once wrote, "nothing whatsoever takes place in the universe in which some relation of maximum and minimum does not appear.".
 
 *If you enjoyed this story, please feel free go the [code](https://github.com/g4brielvs/COVID-19/blob/master/2020-03-11-gs-covid19.ipynb) or launch the [notebook](https://mybinder.org/v2/gh/g4brielvs/COVID-19/master?filepath=2020-03-11-gs-covid19.ipynb).*
