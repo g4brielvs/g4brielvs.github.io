@@ -100,7 +100,7 @@ We solved our equation numerically inputting different parameters to see how it 
 {% include posts/2020-03-13-why-is-coronavirus-all-about-mathematics/2.html %}
 <sub></sub>
 
-We visually check how small decrements *basic reproduction number* will have a huge accumulative gain over time.That is reason why we should take agressive action, either by social distancing, avoiding and cancelling events. 
+We visually check how small decrements *basic reproduction number* will have a huge accumulative gain over time. That is reason why we should take agressive action, either by social distancing, avoiding and cancelling events.
 
 We saw that the *basic reproduction number* depends on *contact rate* and *recovery rate*. Since the *recovery rate* is barely in our control as it is typicallly a biological charateristic of the virus, controlling the *contact rate* is our best chance to flatten the curve. That does not mean we should not invest in treatments, best case scenario will bring both down.
 
@@ -129,7 +129,7 @@ Let the SIR model be as follows,
 - *$\gamma$*: *recovery rate* or how many people recover in given time
 - *N*: total population 
 
-First, the *equation S* tell us that as the population is infected, the susceptible population becames smaller. 
+First, the *equation S* tell us that as the population get infected, the susceptible population becomes smaller. 
 
 $$
 \begin{equation}
@@ -168,21 +168,23 @@ Well...We added all that math...for nothing? Wait for it and zoom out for a mome
 
 Now we have it! 
 
-Note that for $R_0 = 4.2$, the original mdoel gave us 1.5M, exceeding our population of 1M. That's nonsense!
+Note that our original model gave us 1.5M for $R_0 = 4.2$, exceeding our total simulated population of 1M. That's nonsense!
 
 Let us see the rest of the solution,
 
 {% include posts/2020-03-13-why-is-coronavirus-all-about-mathematics/5.html %}
 <sub></sub>
 
-Once more, we visually check how sensitive those systems are to the *basic reproduction number*. 
+Once more, we visually check how sensitive those systems are to the *basic reproduction number*.
+
+Just imagine that rather than passing the infection on to 4 people, we slow it down to onto 3, that is a 25% reduction of active cases at the peak. If 4 to 2, that number would be cut to half.
 
 By mitigating the infection, we will be able to not only to postpone the peak of the outbreak, but to bring the maximum number of active cases the at the peak to a lower ground and then to protect the most vulnerable by making them less susceptible and giving people the chance to get proper treatment.
 
 {% include posts/2020-03-13-why-is-coronavirus-all-about-mathematics/6.html %}
 <sub></sub>
 
-Another important point to make it is our resources, like healthcare and food supply chain, are limited and not postponing the peak of infection could stress them to a point where they can not operate, leading to catastrophe.
+Another important point to make it is our resources, like healthcare and food supply chain, are limited and not postponing the peak of infection could stress them to a point where they could not operate, leading to catastrophe.
 
 That's why Coronavirus all about Mathematics. As Euler once wrote, "nothing whatsoever takes place in the universe in which some relation of maximum and minimum does not appear.".
 
