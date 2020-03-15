@@ -15,7 +15,7 @@ use_math: True
 On 11 March 2020, the World Health Organization officiallly [declared](https://twitter.com/WHO/status/1237777021742338049?s=20) the coronavirus (SARS-CoV-2 or COVID-19) a [pandemic](https://en.wikipedia.org/wiki/Pandemic). But, fear not, this is not yet another opinionated response on the failing of society and the end of times. This is all about Mathematics!
 
 {% include posts/2020-03-13-why-is-coronavirus-all-about-mathematics/1.html %}
-<sub>Source: https://systems.jhu.edu/research/public-health/ncov/</sub>
+<sub>Source: https://systems.jhu.edu/research/public-health/ncov/ as of March 12th.</sub>
 
 Curiously enough, the numbers might help us understand all the fuss we hear about social distancing, flattening the curve, lockdowns and ultimately vaccinations.
 
@@ -28,6 +28,11 @@ The idea is rather straightforward: it has do with the way a quantity changes. W
 ```
 the rate of change is proportional to the quantity at any given time
 ```
+
+Let us apply that idea on data from the beginning of the outbreak in China,
+
+{% include posts/2020-03-13-why-is-coronavirus-all-about-mathematics/7.html %}
+<sub>Source: https://systems.jhu.edu/research/public-health/ncov/ as of March 12th.</sub>
 
 Probably many in the past observed this behavior on how populations expand, diseases spread, biology decays or even how science progresses, but it was formally brought to life in the work on logarithms. Later, while studying compound interest - more money you have, more money you make - [Bernoulli](https://en.wikipedia.org/wiki/Jacob_Bernoulli) discovered a constant ironically known as [Euler's number](https://en.wikipedia.org/wiki/E_(mathematical_constant)).
 
