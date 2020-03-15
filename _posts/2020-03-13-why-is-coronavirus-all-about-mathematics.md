@@ -166,7 +166,9 @@ Let us see the rest of the solution,
 {% include posts/2020-03-13-why-is-coronavirus-all-about-mathematics/5.html %}
 <sub></sub>
 
-Once more, we visually check how sensitive those systems are to the *basic reproduction number*. By mitigating the infection, we will be able to not only to postpone the peak of the outbreak, but bringing the maximum number of active cases the at the peak to a lower ground and then protecting the most vulnerable by making them less susceptible and giving people the chance to get proper treatment.
+Once more, we visually check how sensitive those systems are to the *basic reproduction number*. 
+
+By mitigating the infection, we will be able to not only to postpone the peak of the outbreak, but to bring the maximum number of active cases the at the peak to a lower ground and then to protect the most vulnerable by making them less susceptible and giving people the chance to get proper treatment.
 
 {% include posts/2020-03-13-why-is-coronavirus-all-about-mathematics/6.html %}
 <sub></sub>
