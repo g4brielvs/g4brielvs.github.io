@@ -79,9 +79,9 @@ If the *recovery rate* is greater than *contact rate*, the rate of change will a
 
 On the other hand, if *contact rate* is greater *recovery rate*, we will have a disaster. Apparently, those paramaters indicate how strong an epidemic can be.
 
-Now, if $\gamma$ is the *recovery rate*, then $1/\gamma$ is the *infectious/recovery period* or the period of time during which an infected individual can pass it on, 
+Now, if $\gamma$ is the *recovery rate*, then $1/\gamma$ is the *infectious/recovery period* or the period of time during which an infected individual can pass it on. 
 
-Now, consider the product between the $\beta$ and $1/\gamma%. That results on the average number of people an infected patient will pass the infection on. For example, let us say in given scenario the *contact rate* $\beta = 0.2$ and the *infectious/recovery* period is $\gamma = 10$ days. Then we expect that each infected patient will pass the infection onto 2 people.
+Consider the product between the $\beta$ and $1/\gamma$. It results on the average number of people an infected patient will pass the infection on. For example, let us say that in a given scenario the *contact rate* is $\beta = 0.2$ and the *infectious/recovery* period is $\gamma = 1/10$ days. Then we expect that each infected patient will pass the infection onto 2 people.
 
 $$
 \begin{equation}
