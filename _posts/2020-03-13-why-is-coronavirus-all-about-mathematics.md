@@ -176,3 +176,6 @@ By mitigating the infection, we will be able to not only to postpone the peak of
 Another important point to make it is our resources, like healthcare and food supply chain, are limited and not postponing the peak of infection could stress them to a point where they can not operate, leading to catastrophe.
 
 That's why Coronavirus all about Mathematics. As Euler once wrote, "nothing whatsoever takes place in the universe in which some relation of maximum and minimum does not appear.".
+
+*If you enjoyed this story, please feel free go the [code](https://github.com/g4brielvs/COVID-19/blob/master/2020-03-11-gs-covid19.ipynb) or launch the [notebook](https://mybinder.org/v2/gh/g4brielvs/COVID-19/master?filepath=2020-03-11-gs-covid19.ipynb).*
+
