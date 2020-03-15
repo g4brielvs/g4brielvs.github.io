@@ -195,12 +195,13 @@ Herd immunity (also called herd effect, community immunity, population immunity,
 I will let the numbers talk. Assuming that 50% of the polulation is immune/vaccinated initially,
 
 {% include posts/2020-03-13-why-is-coronavirus-all-about-mathematics/8.html %}
-
 {% include posts/2020-03-13-why-is-coronavirus-all-about-mathematics/9.html %}
 
 and even in the event of the apocalypse,
 
 {% include posts/2020-03-13-why-is-coronavirus-all-about-mathematics/10.html %}
+{% include posts/2020-03-13-why-is-coronavirus-all-about-mathematics/11.html %}
+
 
 <br>
 That's why Coronavirus all about Mathematics. As Euler once wrote, "nothing whatsoever takes place in the universe in which some relation of maximum and minimum does not appear.".
