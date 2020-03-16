@@ -20,7 +20,6 @@ baseurl : ""
 url: "http://g4brielvs.me"
 
 google_analytics: "UA-66296217-1"
-disqus_shortname: "g4brielvs"
 
 # Handling Reading
 include:
