@@ -179,7 +179,7 @@ Let us see the rest of the solution,
 
 Once more, we visually check how sensitive those systems are to the *basic reproduction number*.
 
-Just imagine that rather than each infected patient passing the infection onto other $4$ people, we could slow it down to $3$, that would result in a 25% reduction of active cases at the peak. If social distancing from 4 to 2, the peak would be cut in half!
+Imagine that rather than each infected patient passing the infection onto other $4$ people, we could slow it down to $3$, that would result in a 25% reduction of active cases at the peak. If social distancing, from 4 to 2, the peak would be cut in more than half!
 
 By mitigating the contamination, we will be able to not only to postpone the peak of the outbreak, but to bring the maximum number of active cases the at the peak to a lower ground and then to protect the most vulnerable by making them less susceptible and giving people the chance to get proper treatment.
 
