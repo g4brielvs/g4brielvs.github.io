@@ -34,13 +34,15 @@ Let us apply that idea on data from the beginning of the outbreak in China,
 {% include posts/2020-03-13-why-is-coronavirus-all-about-mathematics/7.html %}
 <sub>Source: https://systems.jhu.edu/research/public-health/ncov/ as of March 12th.</sub>
 
-Probably many in the past observed this behavior on how populations expand, diseases spread, biology decays or even how science progresses, but it was formally brought to life in the work on logarithms. Later, while studying compound interest - more money you have, more money you make - [Bernoulli](https://en.wikipedia.org/wiki/Jacob_Bernoulli) discovered a constant ironically known as [Euler's number](https://en.wikipedia.org/wiki/E_(mathematical_constant)).
+Probably many in the past observed this behavior on how populations expand, diseases spread, biology decays or even how science progresses, but it was formally brought to life in the work on logarithms.
 
-We will have the opportunity to talk about the multiple "origins" of that constant in the future.
+Later, while studying compound interest - more money you have, more money you make - [Jabob Bernoulli](https://en.wikipedia.org/wiki/Jacob_Bernoulli) discovered a constant ironically known as [Euler's number](https://en.wikipedia.org/wiki/E_(mathematical_constant)).
+
+We shall have the opportunity to talk about that constant's multiple "origins" in the future.
 
 #### Exponentiate!
 
-Coming back to the virus. In our case, having an exponential growth suggests that the larger the infectious population, quicker we will have new cases and the infectious population will grow. We pratically experience that whenever people get sick around us (or when all of our friends start getting pregnant at the same...no! it is not exponential...or is it?)
+Coming back to the virus. In our case, having an exponential growth suggests that the larger the infectious population, quicker we will have new cases and that infectious population will grow. We pratically experience that whenever people get sick around us (or whenever all of our friends start getting pregnant at the same...no! it is not exponential...or is it?)
 
 Scientists denote ideas using mathematical script for convenience (sometimes laziness). Let us do it then,
 
@@ -63,9 +65,9 @@ We are going to formulate a model using variables and parameters to quantify *ho
 - *$\beta$*: *contact rate* or how many people an infected person comes into contact with in given time
 - *$\gamma$*: *recovery rate* or how many people recover in given time
 
-The rate on which people are infected should grow the more contact they have to each other and should decay as they recover. In another words, the rate of change is *positively* proportional to $\beta$ (*contact rate*) and *negatively* proportional to $\gamma$ (*recovery rate*)
+The rate on which people get infected should grow the more contact they have to each other and should decay as they recover. In another words, the rate of change is *positively* proportional to $\beta$ (*contact rate*) and *negatively* proportional to $\gamma$ (*recovery rate*)
 
-Finally, we have our equation,
+Finally, we have our equation as follows,
 
 $$
 \begin{equation}
@@ -75,13 +77,13 @@ $$
 
 Now let us take some time to check if we can take some conclusions from it. 
 
-If the *recovery rate* is greater than *contact rate*, the rate of change will always be negative, so the infection will eventually dissipate and even not outbreak. 
+If the *recovery rate* is greater than the *contact rate*, the rate of change will always be negative, so the infection will eventually dissipate and even won't outbreak. 
 
-On the other hand, if *contact rate* is greater *recovery rate*, we will have a disaster. Apparently, those paramaters indicate how strong an epidemic can be.
+On the other hand, if the *contact rate* is greater the the *recovery rate*, we will have an outbreak. Apparently, those paramaters indicate how strong an epidemic can be.
 
-Now, if $\gamma$ is the *recovery rate*, then $1/\gamma$ is the *infectious/recovery period* or the period of time during which an infected individual can pass it on. 
+If $\gamma$ is the *recovery rate*, then $1/\gamma$ is the *infectious/recovery period* or the period of time during which an infected person is sick and then can pass it on.
 
-Consider the product between the $\beta$ and $1/\gamma$. It results on the average number of people an infected patient will pass the infection on. For example, let us say that in a given scenario the *contact rate* is $\beta = 0.2$ and the *infectious/recovery* period is $1/\gamma = 10$ days. Then we expect that each infected patient will pass the infection onto 2 people.
+Consider the product between the $\beta$ and $1/\gamma$. That gives the average number of people an infected patient will pass the infection on. For example, let us say that in a given scenario the *contact rate* is $\beta = 0.2$ and the *infectious/recovery* period is $1/\gamma = 10$ days. Then we expect that each infected patient will pass the infection onto 2 people.
 
 $$
 \begin{equation}
@@ -89,35 +91,35 @@ R_{0} = \frac {\beta}{\gamma}
 \end{equation}
 $$
 
-In fact, that indicator is known as the *basic reproduction number*. Note that when $R_0 > 1$ the infection will be able to start spreading in a population, but not if $R_0 < 1$.
+In fact, that indicator is known as the *basic reproduction number*. Note that when $R_0 > 1$ the infection will be able to start spreading in a population, but not if $R_0 < 1$. So that is indeed a very important indicator.
 
-Probably everybody has that number in their minds at the present. When trying to mitigiate, we will see how important bringing it down is in order to slow down the epidemic.
+Probably everybody has that number in their minds in the present. When trying to mitigiate the contamination, we will see how important bringing it down is in order to slow down the epidemic.
 
 After the outbreak in China, studies found that COVID-19's basic reproduction number is between [1.4-3.9](https://pubmed.ncbi.nlm.nih.gov/31995857-early-transmission-dynamics-in-wuhan-china-of-novel-coronavirus-infected-pneumonia/), which means that, on avarage, a sick patient transmits the infection to 1.4 and 3.9 others. The *recovery period* is around [10 days](https://www.statnews.com/2020/03/09/people-shed-high-levels-of-coronavirus-study-finds-but-most-are-likely-not-infectious-after-recovery-begins/). 
 
-We solved our equation numerically inputting different parameters to see how it plays out.
+We solved our equation numerically inputting different parameters to see how they play out.
 
 {% include posts/2020-03-13-why-is-coronavirus-all-about-mathematics/2.html %}
 <sub></sub>
 
 We visually check how small decrements *basic reproduction number* will have a huge accumulative gain over time. That is reason why we should take agressive action, either by social distancing, avoiding and cancelling events.
 
-We saw that the *basic reproduction number* depends on *contact rate* and *recovery rate*. Since the *recovery rate* is barely in our control as it is typicallly a biological charateristic of the virus, controlling the *contact rate* is our best chance to flatten the curve. That does not mean we should not invest in treatments, best case scenario will bring both down.
+We saw that the *basic reproduction number* depends on *contact rate* and *recovery rate*. Since the *recovery rate* is barely in our control - as it is typicallly a biological charateristic of the virus -, controlling the *contact rate* is our best chance to flatten the curve. That does not mean we should not invest in treatments and in the best case scenario we should bring both down.
 
 ### Thou shall not exponentiate!
 
 But here is the plot twist: an epidemic is not purely exponential! Our first model assumed that the infection will spread indefinitely, the population is infinite and there is no immunity or cure. 
 
-Of course, that is nonsense. An rather evil way of think is that once the entire population is infected, there is none left to be infected!
+Of course, that is nonsense. A rather evil way of think of it is that once the entire population is infected, there is none left to be infected!
 
 Let us address that in a new model by assuming the following,
 
 - fixed population (nobody dying, moving or being born)
 - recovery and immunity
 
-In COVID's case, [it is not clear how long the protection lasts](https://www.independent.co.uk/life-style/health-and-families/coronavirus-immunity-reinfection-get-covid-19-twice-sick-spread-relapse-a9400691.html). But we will assume it lasts longer than our simulated timeframe.
+In COVID-19's case, [it is not clear how long the protection lasts](https://www.independent.co.uk/life-style/health-and-families/coronavirus-immunity-reinfection-get-covid-19-twice-sick-spread-relapse-a9400691.html). But we will assume it lasts longer than our simulated timeframe.
 
-We will use a compartmental model. The idea is to divide the population into group (or *compartments*) and describe how the infection moves from one to another. It was first introduced by [Anderson Ogilvy Kermack](https://en.wikipedia.org/wiki/Anderson_Gray_McKendrick) and [Anderson Gray McKendrick](https://en.wikipedia.org/wiki/Anderson_Gray_McKendrick]).
+We will use a model that was first introduced by [Anderson Ogilvy Kermack](https://en.wikipedia.org/wiki/Anderson_Gray_McKendrick) and [Anderson Gray McKendrick](https://en.wikipedia.org/wiki/Anderson_Gray_McKendrick]) called a compartmental model. The idea is to divide the population into group (or *compartments*) and describe how the infection moves from one to another.
 
 Let the SIR model be as follows,
 
@@ -129,7 +131,7 @@ Let the SIR model be as follows,
 - *$\gamma$*: *recovery rate* or how many people recover in given time
 - *N*: total population 
 
-First, the *equation S* tell us that as the population get infected, the susceptible population becomes smaller. 
+First, the *equation S* tell us that as the population gets infected, the susceptible population becomes smaller. 
 
 $$
 \begin{equation}
@@ -145,7 +147,7 @@ $$
 \end{equation}
 $$
 
-Last, the *equation R* represents that recovered population is proportinal to the recovery rate.
+Last, the *equation R* says that the recovered population is proportinal to the recovery rate.
 
 $$
 \begin{equation}
@@ -153,7 +155,7 @@ $$
 \end{equation}
 $$
 
-Unfortunately, that system of differential equations non-linear and does not have analytical solution. Fortunately, we solve it numerically with the following initial conditions,
+Unfortunately, that system of differential equations is non-linear and does not have analytical solution. Fortunately, we solve it numerically with the following initial conditions,
 
 - *I(0)* = 1 (patient zero)
 - *N* = 1.000.000 (population)
@@ -177,14 +179,14 @@ Let us see the rest of the solution,
 
 Once more, we visually check how sensitive those systems are to the *basic reproduction number*.
 
-Just imagine that rather than passing the infection on to 4 people, we slow it down to to 3, that is a 25% reduction of active cases at the peak. If 4 to 2, that number would be cut to half!
+Just imagine that rather than each infected patient passing the infection onto other $4$ people, we could slow it down to $3$, that would result in a 25% reduction of active cases at the peak. If social distancing from 4 to 2, the peak would be cut in half!
 
-By mitigating the infection, we will be able to not only to postpone the peak of the outbreak, but to bring the maximum number of active cases the at the peak to a lower ground and then to protect the most vulnerable by making them less susceptible and giving people the chance to get proper treatment.
+By mitigating the contamination, we will be able to not only to postpone the peak of the outbreak, but to bring the maximum number of active cases the at the peak to a lower ground and then to protect the most vulnerable by making them less susceptible and giving people the chance to get proper treatment.
 
 {% include posts/2020-03-13-why-is-coronavirus-all-about-mathematics/6.html %}
 <sub></sub>
 
-Another important point to make it is our resources, like healthcare and food supply chain, are limited and not postponing the peak of infection could stress them to a point where they could not operate, leading to catastrophe.
+Another important point to make is that our resources, like healthcare and food supply chain, are limited and not lowering the peak of infection could stress them to a point where they could not operate, leading to catastrophe.
 
 ### Herd immunity
 
