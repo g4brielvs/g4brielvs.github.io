@@ -1,7 +1,11 @@
 ---
 layout: default
-cover: https://www.dropbox.com/s/u9yicvgxtfd5371/g4brielvs_cover.jpg?raw=1
+cover: https://www.dropbox.com/s/c2zxmjnxp5ac09l/g4brielvs_cover.jpg?raw=1
 ---
+
+{% if site.author %}
+{% assign author = site.data.authors[site.author] %}
+{% endif %}
 
 <header class="main-header {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
     <nav class="main-nav overlay">
@@ -12,10 +16,6 @@ cover: https://www.dropbox.com/s/u9yicvgxtfd5371/g4brielvs_cover.jpg?raw=1
             <i class="fa fa-rss" aria-hidden="true"></i>
         </a>
     </nav>
-
-    {% if site.author %}
-      {% assign author = site.data.authors[site.author] %}
-    {% endif %}
 
     <div class="vertical">
         <div class="main-header-content inner">
@@ -82,7 +82,7 @@ cover: https://www.dropbox.com/s/u9yicvgxtfd5371/g4brielvs_cover.jpg?raw=1
         </div>
     </div>
     <a class="scroll-down" href="#content">
-        <i class="fa fa-caret-down fa-lg" aria-hidden="true"></i>
+        <i class="fa fa-chevron-down fa-lg" aria-hidden="true"></i>
         <span class="hidden">Scroll Down</span>
     </a>
 </header>

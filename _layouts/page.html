@@ -3,20 +3,18 @@ layout: default
 post_class: post-template page-template
 ---
 
-<nav class="main-nav">
-    <a class="back-button" href="{{ site.url }}">
-        <i class="fa fa-th" aria-hidden="true"></i>
-    </a>
-    <a class="subscribe-button" href="{{ site.url }}feed.xml">
-        <i class="fa fa-rss" aria-hidden="true"></i>
-    </a>
-</nav>
+<header class="main-header post-head {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
+    <nav class="main-nav {% if page.cover %} overlay {% endif %}">
+        <a class="back-button" href="{{ site.url }}">
+            <i class="fa fa-long-arrow-alt-left" aria-hidden="true"></i>
+        </a>
+        <a class="subscribe-button" href="{{ site.url }}/feed.xml">
+            <i class="fa fa-rss" aria-hidden="true"></i>
+        </a>
+    </nav>
+</header>
 
-<main class="content" role="main">
-    <article class="post">
-        <h1 class="post-title">{{ site.title }}</h1>
-        <section class="post-content">
-            {{content}}
-        </section>
-    </article>
-</main>
+
+{{content}}
+ 
+

@@ -22,10 +22,10 @@ Em 2017, a universidade [anunciou](https://www.unicamp.br/unicamp/noticias/2017/
 
 Abaixo eu conto um pouco como foi organizar e participar do projeto.
 
-<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Foxavante%2Fvideos%2F1740460752834851%2F&show_text=1&width=476" width="800" height="600" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true">
+<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Foxavante%2Fvideos%2F1740460752834851%2F&show_text=1&width=476" width="800" height="800" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true">
 </iframe>
 
 
-<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Foxavante%2Fvideos%2F1740549176159342%2F&show_text=1&width=476" width="800" height="600" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true">
+<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Foxavante%2Fvideos%2F1740549176159342%2F&show_text=1&width=476" width="800" height="800" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true">
 </iframe>
 

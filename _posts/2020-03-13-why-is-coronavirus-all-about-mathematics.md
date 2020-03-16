@@ -4,7 +4,7 @@ title: "Why is Coronavirus all about Mathematics?"
 categories:
     - mathematics
 crosspost_to_medium: false
-use_math: True
+mathjax: true
 ---
 
 <blockquote>

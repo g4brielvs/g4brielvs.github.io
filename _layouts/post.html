@@ -1,21 +1,10 @@
 ---
-layout: default
+layout: page
 post_class: post-template
 ---
 
-<header class="main-header post-head {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
-    <nav class="main-nav {% if page.cover %} overlay {% endif %}">
-        <a class="back-button" href="{{ site.url }}">
-            <i class="fa fa-th" aria-hidden="true"></i>
-        </a>
-        <a class="subscribe-button" href="{{ site.url }}/feed.xml">
-            <i class="fa fa-rss" aria-hidden="true"></i>
-        </a>
-    </nav>
-</header>
-
 {% if site.author %}
-{% assign author = site.data.authors[site.author] %}
+    {% assign author = site.data.authors[site.author] %}
 {% endif %}
 
 <main class="content" role="main">
@@ -24,7 +13,7 @@ post_class: post-template
             <h1 class="post-title">{{ page.title }}</h1>  
             <section class="post-meta">
                 {% if site.author %}
-                    <img class="author-thumb" <img src="{{author.avatar}}" nopin="nopin" />
+                    <img class="author-thumb" href="{{ site.url }}" src="{{author.avatar}}" nopin="nopin" />
                     {{author.name | prepend: 'by '}}
                 {% endif %}    
                 <time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">
@@ -48,18 +37,67 @@ post_class: post-template
         <footer class="post-footer">
             <!-- If we want to display author's name and bio -->
             {% if site.author %}
-                <figure class="author-image">
-                    <a class="img" href="{{ site.url }}" style="background-image: url({{author.avatar}})"></a>
-                </figure>
                 <section class="author">
-                    <h4>{{author.github}}</h4>
+                    <figure class="author-image">
+                        <a class="img" href="{{ site.url }}" style="background-image: url({{author.avatar}})"></a>
+                    </figure>
                     <p>{{ author.bio }}</p>
+                    <ul class="author-social">
+                        {% if author.email %}
+                            <li><a href="mailto:{{ author.email }}"><i class="fas fa-paper-plane"></i></a></li>
+                        {% endif %}
+                        {% if author.number %}
+                            <li><a href="https://wa.me/{{ author.number }}"><i class="fab fa-whatsapp"></i></a></li>
+                        {% endif %}
+                        {% if author.keybase %}
+                            <li><a href="https://keybase.io/{{ author.keybase }}"><i class="fab fa-keybase"></i></a></li>
+                        {% endif %}
+                        {% if author.keybase %}
+                            <li><a href="https://www.t.me/{{ author.telegram }}"><i class="fab fa-telegram"></i></a></li>
+                        {% endif %}
+                        {% if author.cv %}
+                            <li><a href="{{ site.url }}/cv/"><i class="far fa-file-pdf"></i></a></li>
+                        {% endif %}
+                        {% if author.facebook %}
+                            <li><a href="https://facebook.com/{{ author.facebook }}"> <i class="fab fa-facebook"></i></a></li>
+                        {% endif %}
+                        {% if author.twitter %}
+                            <li><a href="https://twitter.com/{{ author.twitter }}"><i class=" fab fa-twitter"></i></a></li>
+                        {% endif %}
+                        {% if author.medium %}
+                            <li><a href="https://medium.com/@{{ author.medium }}"><i class=" fab fa-medium"></i></a></li>
+                        {% endif %}
+                        {% if author.reddit %}
+                            <li><a href="https://reddit.com/user/{{ author.reddit }}"><i class=" fab fa-reddit-alien"></i></a></li>
+                        {% endif %}
+                        {% if author.github %}
+                            <li><a href="https://github.com/{{ author.github }}"><i class="fab fa-github"></i></a></li>
+                        {% endif %}
+                        {% if author.linkedin %}
+                            <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}"><i class="fab fa-linkedin-in"></i></a></li>
+                        {% endif %}
+                        {% if author.goodreads %}
+                            <li><a href="https://goodreads.com/{{ author.goodreads }}"><i class="fab fa-goodreads"></i></a></li>
+                        {% endif %}
+                        {% if author.lastfm %}
+                            <li><a href="http://lastfm.com/user/{{ author.lastfm }}"><i class="fab fa-lastfm"></i></a></li>
+                        {% endif %}
+                        {% if author.instagram %}
+                            <li><a href="https://instagram.com/{{ author.instagram }}"><i class="fab fa-instagram"></i></a></li>
+                        {% endif %}
+                        {% if author.pinterest %}
+                            <li><a href="https://www.pinterest.com/{{ author.pinterest }}"><i class="fab fa-pinterest"></i></a></li>
+                        {% endif %}
+                        {% if author.blockchain %}
+                            <li><a href=" https://www.blockchain.com/btc/address/{{ author.blockchain }}"><i class="fab fa-bitcoin"></i></a></li>
+                        {% endif %}
+                    </ul>
                     <a href="https://creativecommons.org/licenses/by/4.0/">
                         <i class="fab fa-creative-commons" aria-hidden="true"></i>
                     </a>
+
                 </section>
             {% endif %}
-            {% include comments.html %}
         </footer>
     </article>
 </main>
