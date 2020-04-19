@@ -40,6 +40,8 @@ layout : compress
 
     <script type="text/javascript" src="/assets/js/index.js"></script>
 
-    {% include analytics.html %}
+    {% if jekyll.environment == 'production' %}
+        {% include analytics.html %}
+    {% endif %}
 </body>
 </html>
