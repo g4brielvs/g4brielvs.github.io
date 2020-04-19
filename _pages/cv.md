@@ -1,5 +1,6 @@
 ---
 title: "CV"
+layout: default
 sitemap: true
 permalink: /cv/
 redirect_to:
