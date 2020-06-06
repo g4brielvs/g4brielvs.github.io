@@ -35,7 +35,7 @@ I had just finished doing an Armed Forces Day broadcast, you know, Voice of Amer
 
 <br><b>― Miles Davis </b>
 
-That "incident" happened 2 weeks before "Kind of Blue" was released.
+That "incident" happened 2 weeks after "Kind of Blue" was released.
 
 ![](https://www.dropbox.com/s/65zlqhcx6f9ml4e/2020-06-05-have-you-ever-listened-to-miles-davis-3.jpg?raw=1)
 
