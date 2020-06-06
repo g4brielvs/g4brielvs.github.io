@@ -6,7 +6,7 @@ use_math: false
 ---
 
 <blockquote>
-I had just finished doing an Armed Forces Day broadcast, you know, Voice of America and all that bullshit. I had just walked this pretty white girl named Judy out to get a cab. I had just walked this pretty white girl named Judy out to get a cab. She got in the cab, and I’m standing there in front of Birdland wringing wet because it’s a hot, steaming, muggy night in August.
+I had just finished doing an Armed Forces Day broadcast, you know, Voice of America and all that bullshit. I had just walked this pretty white girl named Judy out to get a cab. She got in the cab, and I’m standing there in front of Birdland wringing wet because it’s a hot, steaming, muggy night in August.
 </blockquote>
 
 ![](https://www.dropbox.com/s/da7kk2fiv21tztl/2020-06-05-have-you-ever-listened-to-miles-davis.jpeg?raw=1)
