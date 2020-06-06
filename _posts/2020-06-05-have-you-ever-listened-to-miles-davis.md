@@ -33,7 +33,7 @@ I had just finished doing an Armed Forces Day broadcast, you know, Voice of Amer
 
 > Around this time, people — white people — started saying that I was always “angry,” that I was “racist,” or some silly shit like that. Now, I’ve been racist towards nobody, but that don’t mean I’m going to take shit from a person just because he’s white. I didn’t grin or shuffle and didn’t walk around with my finger up my ass begging for no handout and thinking I was inferior to whites. I was living in America, too, and I was going to try to get everything that was coming to me.
 
-<br><b>― Miles Davis </b>
+<br><b>― Miles Davis (Miles: The Autobiography)</b>
 
 That "incident" happened 2 weeks after "Kind of Blue" was released.
 
