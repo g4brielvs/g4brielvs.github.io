@@ -1,6 +1,5 @@
 # [Gabriel's Personal Blog](http://g4brielvs.github.io)
 
-![jekyll build](https://github.com/g4brielvs/g4brielvs.github.io/workflows/jekyll%20build/badge.svg) 
 [![Build Status](https://travis-ci.org/g4brielvs/g4brielvs.github.io.svg?branch=master)](https://travis-ci.org/g4brielvs/g4brielvs.github.io)
 
 # About me 
