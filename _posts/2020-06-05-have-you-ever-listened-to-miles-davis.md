@@ -9,7 +9,7 @@ use_math: false
 I had just finished doing an Armed Forces Day broadcast, you know, Voice of America and all that bullshit. I had just walked this pretty white girl named Judy out to get a cab. She got in the cab, and I’m standing there in front of Birdland wringing wet because it’s a hot, steaming, muggy night in August.
 </blockquote>
 
-![](https://www.dropbox.com/s/da7kk2fiv21tztl/2020-06-05-have-you-ever-listened-to-miles-davis.jpeg?raw=1)
+![](https://www.dropbox.com/s/hrhoq79edm0kzdd/2020-06-05-have-you-ever-listened-to-miles-davis.jpeg?raw=1)
 
 > This white policeman comes up to me and tells me to move on. At the time I was doing a lot of boxing and so I thought to myself, I ought to hit this motherfucker because I knew what he was doing. But instead I said, “Move on, for what? I’m working downstairs. That’s my name up there, Miles Davis,” and I pointed to my name on the marquee all up in lights.
 
@@ -23,7 +23,7 @@ I had just finished doing an Armed Forces Day broadcast, you know, Voice of Amer
 
 > It makes the front pages of the New York newspapers, and they repeat the charges in their headlines. There was a picture, which became famous, of me leaving the jail with this bandage all over my head (they had taken me to the hospital to have my head stitched up), and [Davis’ wife] Frances — who had come down to see me when they were transferring me downtown — walking in front of me like a proud stallion.
 
-![](https://www.dropbox.com/s/x8l37ry8ia4zxu8/2020-06-05-have-you-ever-listened-to-miles-davis-2.jpg?raw=1)
+![](https://www.dropbox.com/s/k0fdjbhx25vxngp/2020-06-05-have-you-ever-listened-to-miles-davis-2.jpg?raw=1)
 
 > When Frances had come down to that police station and saw me all beat up like that, she was almost hysterical, screaming. I think the policemen started to think they had made a mistake, a beautiful woman like this screaming over this nigger. And then Dorothy Kilgallen came down and then wrote about it in her column the next day. The piece was very negative against the police, and that was of some help to my cause.
 
@@ -37,7 +37,7 @@ I had just finished doing an Armed Forces Day broadcast, you know, Voice of Amer
 
 That "incident" happened 2 weeks after "Kind of Blue" was released.
 
-![](https://www.dropbox.com/s/65zlqhcx6f9ml4e/2020-06-05-have-you-ever-listened-to-miles-davis-3.jpg?raw=1)
+![](https://www.dropbox.com/s/30mpbb0n9izq8qq/2020-06-05-have-you-ever-listened-to-miles-davis-3.jpg?raw=1)
 
 "Today, 50 years after it was released, "Kind of Blue" remains the bestselling jazz album of all time. More than 4 million copies have been sold, and the album still sells an average of 5,000 copies a week. If you have a jazz album on your shelf, odds are it's "Kind of Blue."
 
