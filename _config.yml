@@ -13,13 +13,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "g4brielvs"
+title: Gabriel S Vicente 
 author: g4brielvs
-description: "Gabriel Stefanini Vicente"
-baseurl : ""
-url: "http://g4brielvs.me"
+baseurl : 
+url: http://g4brielvs.me
 
-google_analytics: "UA-66296217-1"
+google_analytics: UA-66296217-1
 
 # Handling Reading
 include:
@@ -58,7 +57,6 @@ timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 # Markdown Processing
 markdown: kramdown
 highlighter: rouge
-
 kramdown:
   input: GFM
   hard_wrap: false
