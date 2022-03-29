@@ -21,10 +21,13 @@ cover: https://www.dropbox.com/s/u4cek6w9galtib7/g4brielvs_cover.jpg?raw=1
     <div class="vertical">
         <div class="main-header-content inner">
             <h1 class="page-title">
-                {{ site.author }}
+                {{ author.name }}
             </h1>
             <h2 class="page-description">
-                {% if site.author %}
+                {% if author.alias %}
+                {{ author.alias }}
+                {% endif %}
+                {% if author.headline %}
                 <i class="fa fa-quote-left"></i>
                 {{ author.headline }}
                 <i class="fa fa-quote-right"></i>

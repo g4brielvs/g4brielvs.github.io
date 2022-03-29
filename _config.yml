@@ -13,9 +13,9 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Gabriel S Vicente 
+title: Gabriel S Vicente
 author: g4brielvs
-baseurl : 
+baseurl:
 url: http://g4brielvs.me
 
 google_analytics: UA-66296217-1
@@ -69,8 +69,7 @@ kramdown:
 
 defaults:
   # _posts
-  -
-    scope:
+  - scope:
       path: ""
       type: posts
     values:
