@@ -1,8 +1,8 @@
 ---
-title: "Gabriel Stefanini Vicente"
+title: "Gabriel Vicente's Résumé"
 layout: default
 sitemap: true
-permalink: /cv/
+permalink: /resume
 redirect_to:
-  - https://www.dropbox.com/s/zcqqtg6rvkyw9aw/g4brielvs_cv_en.pdf?raw=1
+  - https://www.dropbox.com/s/vsx7t8nmcmesdb3/gvicente_resume.pdf?raw=1
 ---
