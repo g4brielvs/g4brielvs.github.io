@@ -1,5 +1,5 @@
 ---
-title: "Gabriel Vicente's Résumé"
+title: "Resume"
 layout: default
 sitemap: true
 permalink: /resume
