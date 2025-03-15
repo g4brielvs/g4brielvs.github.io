@@ -5,10 +5,15 @@ sitemap: false
 permalink: /about/
 ---
 
+I’m Gabriel, a Data Scientist with a passion for uncovering the stories data holds. My work is fueled by a commitment to using data to tackle critical global issues and advance the [Sustainable Development Goals](https://sdgs.un.org/goals). With a foundation in Applied Mathematics, Operations Research, and Geospatial Analysis, I focus on extracting insights from spatial data to inform policy decisions, support climate adaptation, and foster inclusive development.
+
+🛰️ Currently, I’m focused on projects that combine satellite imagery, spatial modeling, and data visualization to turn complex data into actionable insights. I’m always learning, staying at the cutting edge of technology to innovate and solve new challenges.
+
+🌟 I’m eager to connect with others who geek out over geospatial data, sustainability, and innovation. 💬 [Let's chat!](https://github.com/g4brielvs/g4brielvs/discussions)! Whether it’s about data, linguistics, sci-fi, or New York City, or simply sharing something close to your heart, I'm always happy to swap ideas and stories! 
+
 {% if site.author %}
     {% assign author = site.data.authors[site.author] %}
     {{ author.bio }}
-    "I haven’t been everywhere, but it’s on my list." – Susan Sontag
 {% endif %}
 
 <!-- Styles -->
@@ -111,41 +116,10 @@ var map = AmCharts.makeChart( "chartdiv", {
 		{
 			"id": "FR",
 			"showAsSelected": true
-		}
-	],
-	"images": 
-	[
-		{
-			"svgPath": targetSVG,
-			"zoomLevel": 5,
-			"scale": 1.0,
-			"title": "Miami",
-			"latitude": 25.7617,
-			"longitude": -80.1918
-		}, 
-		{
-			"svgPath": targetSVG,
-			"zoomLevel": 5,
-			"scale": 1.0,
-			"title": "São Paulo",
-			"latitude": -23.5505,
-			"longitude": -46.6333
-		}, 
-		{
-			"svgPath": targetSVG,
-			"zoomLevel": 5,
-			"scale": 1.0,
-			"title": "Prague",
-			"latitude": 50.0755,
-			"longitude": 14.4378
 		},
 		{
-			"svgPath": targetSVG,
-			"zoomLevel": 5,
-			"scale": 1.0,
-			"title": "New York",
-			"latitude": 40.7128,
-			"longitude": -74.0060
+			"id": "CA",
+			"showAsSelected": true
 		}
 	]
   },
@@ -154,4 +128,3 @@ var map = AmCharts.makeChart( "chartdiv", {
 
 <!-- HTML -->
 <div id="chartdiv"></div>
-
